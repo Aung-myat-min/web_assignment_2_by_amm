@@ -1,0 +1,115 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+    color: black;
+}
+.heading{
+	width: 20%;
+	height: 60%;
+	margin: 0 31% 0 40%;
+	float: left;
+	text-align: center;
+	font-size: xx-large;
+	color: white;
+}
+.heading a{
+    text-decoration: none;
+	line-height: 15vh;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.status{
+	float: right;
+	width: 8%;
+	height: 60%;
+}
+.status img{
+	margin: 25% 27%;
+	width: 46%;
+	height: 50%;
+	border-radius: 50%;
+	border: solid 1px black;
+	opacity: .8;
+}
+.navi{
+	width: inherit;
+	height: 40%;
+	background-color: rgba(112, 112, 112, .6);
+	display: inline-block;
+}
+.navi *:not(i,.shopnow, .active){
+	border: 1px solid black;
+	border-radius: 25px;
+	opacity: .9;
+}
+.navi a:hover{
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    box-shadow: 10px 10px 5px black;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 200ms;
+
+}
+.active{
+    color: red;
+    border-radius: 25px;
+    border: 1px solid red;
+}
+.navi a{
+	margin: 1.5vh 8%;
+	text-decoration: none;
+	padding: 2vh;
+	display: inline-block;
+	background-color: white;
+}
+#homenavi{
+	padding: 2vh 3.5vh;
+}
+.dropdown {
+	display: inline-block;
+	margin: 1.5vh 8%;
+}
+  /* Dropdown button */
+  .dropdown .dropbtn {
+	font-size: 16px;
+	border: none;
+	outline: none;
+	padding: 14px 16px;
+	font-family: inherit;
+  }
+
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+	float: none;
+	padding: 12px 16px;
+	display: block;
+	text-align: left;
+  }
+  .dropdown *:not(button, i):hover{
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+	display: block;
+  }
+.navi input{
+	padding: 1vh;
+	float: right;
+	margin: 3vh 4vh;
+}
