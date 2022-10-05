@@ -3,4 +3,5 @@ nav{
 	height: 25vh;
     color: black;
 	background-image: url("../Images/contactus.jpg");
+	position: absolute;
 }
