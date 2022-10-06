@@ -14,20 +14,51 @@ nav{
 	height: 65vh;
 	width: 160vh;
 	margin: 0 10%;
-	background-color: white;
 	margin-top: 7vh;
 	display: inline-block;
+	background-image: url('../Images/cover.jpg');
 }
 .description{
+	color: white;
 	width: 40%;
 	height: 85%;
 	margin: 3% 50% 2.5% 2.5%;
-	background-color: red;
+	background-color: rgba(112,112,112, .7);
+	border-radius: 50px;
+	padding: 10px;
+	box-shadow: 0 5px 8px 3px rgba(0,0,0,.9);
+}
+.description h1{
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+	margin: 4vh 0;
+	box-shadow: 0 3px 5px 2px rgba(0,0,0,.9);
+	padding: 8px 0;
+}
+.listp{
+	display: inline-block;
+	width: 40%;
+	height: auto;
+	margin-top: 2vh;
+}
+.listp *{
+	line-height: 4vh;
+	font-size: large;
+}
+.listp ul{
+	margin-left: 5vh;
+}
+.listp i{
+	float: right;
+}
+.leftlistp{
+	width: 52%;
+	float: right;
 }
 .button{
 	display: inline-block;
 	width: 100%;
-	height: 10%;
+	height: 20%;
 	background-color: yellow;
-	margin-top: 49.725vh;
 }
