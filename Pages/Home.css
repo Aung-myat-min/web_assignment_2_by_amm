@@ -7,7 +7,6 @@ nav{
 .contents{
 	height: 300vh;
 	width: 100%;
-	background-color: rgba(0,0,0, .5);
 }
 .coverimg{
 	/*20% + a little height of the contents*/
@@ -17,23 +16,30 @@ nav{
 	margin-top: 7vh;
 	display: inline-block;
 	background-image: url('../Images/cover.jpg');
+	box-shadow: 0 5px 8px 3px rgba(0,0,0,.9);
+	border-radius: 5px;
 }
 .description{
 	color: white;
 	width: 40%;
-	height: 85%;
-	margin: 3% 50% 2.5% 2.5%;
+	height: 85%;/*55.25vh*/
+	margin: 2% 50% 2.5% 2.5%;
 	background-color: rgba(112,112,112, .7);
 	border-radius: 50px;
-	padding: 10px;
+	padding: 15px;
+	border: solid 1px black;
 	box-shadow: 0 5px 8px 3px rgba(0,0,0,.9);
 }
+.description *:not(h1){
+	font-size: large;
+}
 .description h1{
-	width: 100%;
+	margin: 4vh 12%;
+	width: 76%;
 	display: inline-block;
 	text-align: center;
-	margin: 4vh 0;
-	box-shadow: 0 3px 5px 2px rgba(0,0,0,.9);
+	box-shadow: 0 0px 5px 0px rgba(0,0,0,.9);
+	border-radius: 25px;
 	padding: 8px 0;
 }
 .listp{
@@ -44,7 +50,6 @@ nav{
 }
 .listp *{
 	line-height: 4vh;
-	font-size: large;
 }
 .listp ul{
 	margin-left: 5vh;
@@ -59,6 +64,19 @@ nav{
 .button{
 	display: inline-block;
 	width: 100%;
-	height: 20%;
-	background-color: yellow;
+	height: 20%;/*11.05vh*/
+}
+.button button{
+	background-color: rgba(255,255,255, .7);
+	float: right;
+	height: 80%;
+	width: 25%;	
+	margin: 2.21vh 10% 0 0;
+	border-radius: 30px;
+}
+.button button:hover{
+	transition: all 300ms 450ms;
+	background-color: rgba(255,255,255, .95);
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,.9);
+	transform:scale(1.1)translateX(10px);
 }

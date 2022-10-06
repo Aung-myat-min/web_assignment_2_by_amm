@@ -57,7 +57,7 @@ a{
     box-shadow: 10px 10px 5px black;
     transition-property: all;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 200ms;
+    transition-duration: 400ms;
 }
 .active{
     color: red;
