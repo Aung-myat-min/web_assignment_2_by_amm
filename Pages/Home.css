@@ -119,12 +119,20 @@ th{
 	height: 13vh;
 }
 .packages a{
-	margin: 1vh;
+	color: white;
+	padding: 2vh;
 	text-decoration: none;
 	font-size: medium;
 	display: inline-block;
 	height: auto;
 	width: auto;
 	border: 1px solid skyblue;
-	background-color: rgba(112,112,112, .7);
+	background-color: gray;
+	border-radius: 25px;
+}
+.packages a:hover{
+	color: #FFCCCB;
+	border-color: red;
+	transform: translateX(3px) translateY(-2px);
+	transition: 200ms;
 }
