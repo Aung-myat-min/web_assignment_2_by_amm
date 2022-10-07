@@ -86,12 +86,11 @@ nav{
 	width: 80%;
 	height: 90vh;
 	display: inline-block;
-	background-color: red;
 }
-.packages p{
+.packages #get{
 	text-align: center;
 }
-.packages p{
+#get{
 	font-size: 30px;
 	display: inline-block;
 	width: 70%;
@@ -100,14 +99,32 @@ nav{
 	border: double black;
 	border-width: 0 0 3px 0;
 }
-.packages li{
-	list-style-type: none;
+.packages p{
 	margin-left: 2vh;
+	font-size: 20px;
+}
+table, th, td{
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+th{
+	font-size: 25px;
 }
 .packages table{
 	width: 60%;
 	margin: 3vh 0 0 10%;
+	box-shadow: 0 2px 5px 0;
 }
 .packages tr{
 	height: 13vh;
+}
+.packages a{
+	margin: 1vh;
+	text-decoration: none;
+	font-size: medium;
+	display: inline-block;
+	height: auto;
+	width: auto;
+	border: 1px solid skyblue;
+	background-color: rgba(112,112,112, .7);
 }
