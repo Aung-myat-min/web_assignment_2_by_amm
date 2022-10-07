@@ -11,7 +11,7 @@ nav{
 .coverimg{
 	/*20% + a little height of the contents*/
 	height: 65vh;
-	width: 160vh;
+	width: 163vh;
 	margin: 0 10%;
 	margin-top: 7vh;
 	display: inline-block;
@@ -79,4 +79,35 @@ nav{
 	background-color: rgba(255,255,255, .95);
 	box-shadow: 0 2px 5px 0 rgba(0,0,0,.9);
 	transform:scale(1.1)translateX(10px);
+}
+/*===========================================*/
+.packages{
+	margin: 10vh 10% 0 10%;
+	width: 80%;
+	height: 90vh;
+	display: inline-block;
+	background-color: red;
+}
+.packages p{
+	text-align: center;
+}
+.packages p{
+	font-size: 30px;
+	display: inline-block;
+	width: 70%;
+	height: 6vh;
+	margin: 0 15%;
+	border: double black;
+	border-width: 0 0 3px 0;
+}
+.packages li{
+	list-style-type: none;
+	margin-left: 2vh;
+}
+.packages table{
+	width: 60%;
+	margin: 3vh 0 0 10%;
+}
+.packages tr{
+	height: 13vh;
 }
