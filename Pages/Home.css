@@ -71,14 +71,14 @@ nav{
 	float: right;
 	height: 80%;
 	width: 25%;	
-	margin: 2.21vh 10% 0 0;
+	margin: -3vh 10% 0 0;
 	border-radius: 30px;
 }
 .button button:hover{
 	transition: all 300ms 450ms;
 	background-color: rgba(255,255,255, .95);
 	box-shadow: 0 2px 5px 0 rgba(0,0,0,.9);
-	transform:scale(1.1)translateX(10px);
+	transform: scale(1.1)translateX(10px);
 }
 /*===========================================*/
 .packages{
@@ -115,7 +115,7 @@ th{
 }
 .packages table{
 	width: 60%;
-	margin: 3vh 0 0 10%;
+	margin: 3vh 0 0 6%;
 	box-shadow: 0 2px 5px 0;
 }
 .packages tr{
@@ -140,11 +140,87 @@ th{
 	transition: 200ms;
 }
 .custom{
-	margin-top: 3vh;
-	float: right;
-	display: inline-block;
+	margin: 3vh 0 0 3vh;
+	float: left;
 	height: 78vh;
-	width: 25%;
+	width: 28%;
 	background-color: rgba(172, 167, 166, .8);
-	border-radius: 30px;
+	border-radius: 10px;
+	box-shadow: 0 2px 5px 0;
+}
+.custom h2{
+	font-size: 30px;
+	margin: 3vh;
+	text-align: center;
+	margin-top: 15vh;
+}
+.custom p,li{
+	font-size: 18px;
+	margin: 2vh 2vh;
+}
+.custom li{
+	list-style-type: circle;
+}
+.custom ul{
+	margin-left: 4vh;
+}
+.custom button{
+	border-radius: 20px;
+	padding: 2vh;
+	margin-left: 4vh;
+	border: 2px solid black;
+}
+.custom button:hover{
+	transition: 300ms;
+	color: white;
+	background-color: black;
+	cursor: pointer;
+	transform: translateX(3px) translateY(-2px);
+	border-color: white;
+}
+/*==================================================*/
+.mealsservices{
+	overflow: auto;
+ 	white-space: nowrap;
+	display: inline-block;
+	height: 50vh;
+	width: 100%;
+	background-color: gray;
+}
+.mealsservices::-webkit-scrollbar {
+	display: none;
+  }
+fieldset{
+	display: inline-block;
+	height: 100%;
+	width: 100%;
+}
+fieldset legend{
+	text-align: center;
+}
+.items{
+	display: inline-block;
+	height: 78%;
+	width: 110%;
+	background-color: goldenrod;
+	margin-top: 10vh;
+}
+.item{
+	display: inline-block;
+	width: 40vh;
+	height: 80%;
+	border: 1px solid black;
+	margin: 2vh 2.5vh 0 2.5vh;
+	background-image: url('../Images/mealexample.jpg');
+	background-repeat: no-repeat;
+	background-size: 40vh 40vh;
+}
+.item2{
+	background-image: url('../Images/serviceexample.jpg');
+}
+.explore{
+	float: right;
+	height: 98%;
+	width: 30vh;
+	background-color: yellow;
 }
