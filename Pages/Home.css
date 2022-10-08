@@ -103,6 +103,9 @@ nav{
 	margin-left: 2vh;
 	font-size: 20px;
 }
+table{
+	float: left;
+}
 table, th, td{
 	border: 1px solid black;
 	border-collapse: collapse;
@@ -135,4 +138,13 @@ th{
 	border-color: red;
 	transform: translateX(3px) translateY(-2px);
 	transition: 200ms;
+}
+.custom{
+	margin-top: 3vh;
+	float: right;
+	display: inline-block;
+	height: 78vh;
+	width: 25%;
+	background-color: rgba(172, 167, 166, .8);
+	border-radius: 30px;
 }
