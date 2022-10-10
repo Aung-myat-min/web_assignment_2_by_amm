@@ -99,27 +99,87 @@
 			<div class="items">
 				<fieldset>
 					<legend>Meals</legend>
-					<div class="item"></div>
-					<div class="item"></div>
-					<div class="item"></div>
-					<div class="item"></div>
-					<div class="explore"></div>
+					<div class="item"><p>Rice and Curry</p></div>
+					<div class="item"><p>Rice and Curry</p></div>
+					<div class="item"><p>Rice and Curry</p></div>
+					<div class="item"><p>Rice and Curry</p></div>
+					<div class="explore"><a href="#">Explore More<i class="fa fa-long-arrow-right"></i></a></div>
 				</fieldset>
 			</div>
 		</div>
 		<div class="mealsservices">
 			<div class="items">
 				<fieldset>
-					<legend>Services</legend>
-					<div class="item item2"></div>
-					<div class="item item2"></div>
-					<div class="item item2"></div>
-					<div class="item item2"></div>
-					<div class="explore"></div>
+					<legend>Plans</legend>
+					<div class="item item2"><p>Beginner Plan</p></div>
+					<div class="item item2"><p>Beginner Plan</p></div>
+					<div class="item item2"><p>Beginner Plan</p></div>
+					<div class="item item2"><p>Beginner Plan</p></div>
+					<div class="explore"><a href="#">Explore More<i class="fa fa-long-arrow-right"></i></a></div>
 				</fieldset>
 			</div>
 		</div>
+		<div class="calculating">
+			<h1>Calculate The Calories</h1>
+			<div class="calculatearea">
+				<p>Select Your Meal</p>
+				<select name="mealTimes" id="mealtime">
+					<option value="1">Breakfast</option>
+					<option value="2">Lunch</option>
+					<option value="3">Dinner</option>
+				</select>
+				<p>Select Your Curry & Size</p>
+				<select name="forMeals" id="Breakfast">
+					<option value="155">Boiled Egg</option>
+					<option value="252">Chicken Sandwich</option>
+					<option value="100">Salad</option>
+					<option value="Null">A Meal</option>
+					<option value="Null">A Meal</option>
+				</select>
+				<!--
+				<select name="forMeals" id="Lunch">
+					<option value="155">Boiled Egg</option>
+					<option value="239">Roasted Chicken</option>
+					<option value="250">Beef</option>
+					<option value="130">Rice</option>
+					<option value="Null">A Meal</option>
+				</select>
+				<select name="forMeals" id="Dinner">
+					<option value="242">Pork</option>
+					<option value="239">Roasted Chicken</option>
+					<option value="250">Beef</option>
+					<option value="83">Wine</option>
+					<option value="Null">A Meal</option>
+				</select>
+			-->
+				<select name="currysize" id="sizess">
+					<option value="small">Small</option>
+					<option value="medium">Medium</option>
+					<option value="large">Large</option>
+					<option value="X-large">Extra Large</option>
+				</select><br>
+				<button>Calculate</button>
+			</div>
+		</div>
 	</div>
-	
 </body>
 </html>
+
+<!--
+<style>
+   #hideValuesOnSelect {
+      display: none;
+   }
+</style>
+
+<select onchange="displayDivDemo('hideValuesOnSelect', this)">
+<option value="0">Java</option>
+<option value="1">Javascript</option>
+</select>
+<div id="hideValuesOnSelect">This is the Javascript</div>
+<script>
+   function displayDivDemo(id, elementValue) {
+      document.getElementById(id).style.display = elementValue.value == 1 ? 'block' : 'none';
+   }
+</script>
+-->
