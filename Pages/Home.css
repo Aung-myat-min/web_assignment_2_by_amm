@@ -5,7 +5,7 @@ nav{
 	position: absolute;
 }
 .contents{
-	height: 400vh;
+	height: 370vh;
 	width: 100%;
 }
 .coverimg{
@@ -235,6 +235,7 @@ fieldset legend{
 	text-align: center;
 	line-height: 30vh;
 	visibility: hidden;
+	border-radius: 20px;
 }
 .item:hover p{
 	visibility: visible;
@@ -326,3 +327,110 @@ fieldset legend{
 	transition: 400ms 200ms;
 	transform: translateX(3vh) translateY(-2vh);
 }
+/*========================================================*/
+footer{
+	width: 100%;
+	height: 70vh;
+}
+footer p{
+	font-size: 20px;
+	color: #e9e9e9;
+	line-height: 10vh;
+	width: 100%;
+	height: 10vh;
+	display: inline-block;
+	text-align: center;
+	background-color: #007acc;
+}
+footer input{
+	border-radius: 20px 0 0 20px;
+}
+.A{
+	margin-top: 5vh;
+	width: 40%;
+	float: left;
+	height: 35vh;
+}
+.A input{
+	width: 96%;
+	padding: 3.5vh 0;
+	padding-left: 1vh;
+	margin-left: 3vh;
+	font-size: 20px;
+}
+.B{
+	margin-top: 5vh;
+	float: left	;
+	width: 60%;
+	height: 35vh;
+}
+.B textarea{
+	font-size: 15px;
+	padding: 1vh;
+	width: 98%;
+	height: 30vh;
+	border: 2px solid black;
+}
+.letter{
+	width: 45%;
+	float: left;
+	height: 60vh;
+}
+.letter strong{
+	display: inline-block;
+	margin-left: 4vh;
+}
+.contact{
+	width: 55%;
+	float: right;
+	height: 60vh;
+}
+.upper{
+	width: 100%;
+	height: 30vh;
+}
+.same h1{
+	font-size: 40px;
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+	margin: 2vh 0;
+}
+.same ul{
+	text-align: center;
+}
+.same li{
+	display: inline-block;
+	list-style-type: none;
+	font-size: 30px;
+}
+.same li:hover{
+	cursor: pointer;
+	color: red;
+	transition: 1s;
+}
+.same i{
+	padding: 1vh;
+	font-size: 35px;
+}
+.down{
+	width: 100%;
+	height: 30vh;
+}
+.down li{
+	margin: 5vh 5%;
+}
+form button{
+	float: right;
+	padding: 2vh 3vh;
+	border-radius: 25px;
+	background-color: #134482;
+	font-size: 15px;
+	color: white;
+}
+form button:hover{
+	transform: translateX(2vh);
+	transition: 300ms;
+	cursor: pointer;
+}
+
