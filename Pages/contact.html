@@ -30,21 +30,96 @@
 		<a href="contact.html" class="active">Contact Us <i class="fa fa-phone"></i></a>
 		<input type="search" name="" id="" placeholder="Search Here🔍">
 	</div>
-	<div class="hehe"></div>
+	<div class="cheehtoke"><button id="btn">Contact Us</button><button id="btn1">FAQ</button></div>
+	<div id="contactUs">
+		<form action="" method="post">
+			<div class="form left">
+				<p>Name</p>
+				<label for="#">First Name:</label><input type="text" name="" class="ee"><br>
+				<label for="#">Last Name: </label><input type="text" name="" class="ee"><br>
+				<p>Email</p>
+				<input type="email" name="" id="a" class=ee>
+			</div>
+			
+			<div class="form right">
+				
+				<p>Feedback</p>
+				<textarea name="" id="" cols="30" rows="10"></textarea>
+				<div class="aa">
+					<input type="submit" value="Submit" > <input type="reset" value="Reset">
+				</div>
+				<p>OR</p>
+				<a href="mailto:example@gmail.com">Email Us</a>
+			</div>
+		</form>
+	</div>
+	<div id="faq">
+		<div class="history">
+			<h1> A Brief History about May Hnin Si Company🌹</h1>
+			<i> &emsp;It was found in 1990 by a man called U Ba Han. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</i>
+		</div>
+		<button class="bar">Where is the company located?<i class="fa fa-caret-down"></i></button>
+		<div class="pane">
+			<p>It is located near the Shwedagon Pagoda.</p>
+			<div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=shwe%20dagon&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.whatismyip-address.com/divi-discount/">divi discount</a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div></div>
+		</div>
+		<button class="bar">What respice is the best in the breakfast set? <i class="fa fa-caret-down"></i></button>
+		<div class="pane">
+			<p>According to our sales and professors, the best respice is in the Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+		<button class="bar">What respice is the best in the lunch set?<i class="fa fa-caret-down"></i></button>
+		<div class="pane">
+			<p>According to our sales and professors, the best respice is in the Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+		<button class="bar">What respice is the best in the dinner set?<i class="fa fa-caret-down"></i></button>
+		<div class="pane">
+			<p>According to our sales and professors, the best respice is in the Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+		<button class="bar">What are opeing hours and closing hours and days?<i class="fa fa-caret-down"></i></button>
+		<div class="pane">
+			<p>From <b>8</b>:00AM to <b>8</b>:00PM. Open Everydays except event days. But we open our customer services 24/7 in this website.</p>	
+		</div>
+	</div>
+	<script>
+		document.getElementById("faq").style.display ="none";
+
+		function openTest() {
+    		document.getElementById("faq").style.display = "block";
+			document.getElementById("contactUs").style.display = "none";
+		}
+		function openTest1() {
+    		document.getElementById("faq").style.display = "none";
+			document.getElementById("contactUs").style.display = "block";
+		}
+		document.getElementById('btn').addEventListener('click', openTest1);
+		document.getElementById('btn1').addEventListener('click', openTest);
+
+		var acc = document.getElementsByClassName("bar");
+		var i;
+
+		for (i = 0; i < acc.length; i++) {
+  			acc[i].addEventListener("click", function() {
+    			this.classList.toggle("active");
+    			var panel = this.nextElementSibling;
+    			if (panel.style.display === "block") {
+      				panel.style.display = "none";
+    			} else {
+      				panel.style.display = "block";
+    			}	
+  			});
+		}
+	</script>
 </body>
 <footer>
-	<div class="letter">
-		<strong>If you have a product that you are interested in, please write to us. Please include as many details as possible in your enquires. Your inputs will gleatly help us to serve you better.</strong> 
-		<form action="#" method="post">
-			<div class="A">
-				<input type="text" name="Name" id="" placeholder="Name">
-				<input type="email" name="Email" id="" placeholder="Email">
-				<input type="text" name="Respices" id="" placeholder="Respices">
-			</div>
-			<div class="B">
-				<textarea name="" id="" cols="30" rows="10" placeholder=""></textarea>
-			</div>
-			<button type="submit">Submint</button>
+	<div class="letter contactusletter">
+		<form action="" method="post">
+			<fieldset>
+				<legend><h2> You can ask questions here</h2></legend>
+				<input type="email" name="" id="" placeholder="Your Email" style=" width: 80%; height: 6vh; border-radius: 10px 10px 10px 10px; margin: 2vh 10%; padding: 1vh;">
+				<textarea name="" id="" cols="30" rows="5" placeholder="Ask Question Here."></textarea>
+				<input type="submit" value="Submit" id="submit" style="float: right; width: 15vh; height: 8vh; background-color: white; border-radius: 10px 10px 10px 10px; margin: 0 2vh 2vh 0;">
+			</fieldset>
+			
 		</form>
 	</div>
 	<div class="contact">
