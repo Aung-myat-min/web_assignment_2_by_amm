@@ -11,7 +11,7 @@
 </head>
 <body>
 	<nav>
-		<div class="heading"><a href="Home.html" style="color: black;">CONTACT US🧑‍💻</a></div>
+		<div class="heading"><a href="Home.html" style="color: white;">RESPICES🍔</a></div>
 		<div class="status">
 			<img src="../Images/status.png" alt="Status LOGO">
 		</div>
@@ -20,18 +20,144 @@
 		<a href="Home.html" id="homenavi">Home <i class="fa fa-home"></i></a>
 		<div class="dropdown">
 			<button class="dropbtn" style="background-color: white; cursor: pointer;">
-				Shop Now! <i class="fa fa-shopping-cart"></i> <i class="fa fa-caret-down"></i>
+				Shop Now! <i class="fa fa-shopping-cart"></i> <i class="fa fa-caret-down"> <i class="fa-solid fa-utensils" style="color: red;"></i></i>
 			</button>
 			<div class="dropdown-content">
-			  <a href="respices.html" class="active">Recipes <i class="fa fa-cutlery"></i></a>
+			  <a href="respices.html" class="active">Recipes <i class="fa-solid fa-utensils"></i></a>
 			  <a href="plans.html">Plans <i class="fa fa-flag"></i></a>
 			</div>
 		</div>
 		<a href="contact.html">Contact Us <i class="fa fa-phone"></i></a>
 		<input type="search" name="" id="" placeholder="Search Here🔍">
 	</div>
-	<div class="hehe"></div>
+	<div id="myBtnContainer">
+  		<button class="btn actives" onclick="filterSelection('all')"> Show all</button>
+  		<button class="btn" onclick="filterSelection('breakfast')"> Breakfast</button>
+  		<button class="btn" onclick="filterSelection('lunch')"> Lunch</button>
+  		<button class="btn" onclick="filterSelection('dinner')"> Dinner</button>
+	</div>
+	<div class="what">
+		<div class="filterDiv breakfast">
+			<img src="../Images/breakfast.jpg" alt="">
+			<div class="sidediv"><i class="fa fa-heart"></i><i class="fa fa-shopping-cart"></i></div>
+		</div>
+  		<div class="filterDiv lunch">
+			<img src="../Images/lunch.jpg" alt="">
+			<div class="sidediv"><i class="fa fa-heart"></i><i class="fa fa-shopping-cart"></i></div>
+		</div>
+  		<div class="filterDiv dinner">
+			<img src="../Images/dinner.jpg" alt="">
+			<div class="sidediv"><i class="fa fa-heart"></i><i class="fa fa-shopping-cart"></i></div>
+		</div>
+  		<div class="filterDiv breakfast">
+			<img src="../Images/error.png" alt="">
+			<div class="sidediv"><i class="fa fa-heart"></i><i class="fa fa-shopping-cart"></i></div>
+		</div>
+  		<div class="filterDiv breakfast">
+			<img src="../Images/error.png" alt="">
+			<div class="sidediv"><i class="fa fa-heart"></i><i class="fa fa-shopping-cart"></i></div>
+		</div>
+  		<div class="filterDiv breakfast">
+			<img src="../Images/error.png" alt="">
+			<div class="sidediv"><i class="fa fa-heart"></i><i class="fa fa-shopping-cart"></i></div>
+		</div>
+  		<div class="filterDiv breakfast">
+			<img src="../Images/error.png" alt="">
+			<div class="sidediv"><i class="fa fa-heart"></i><i class="fa fa-shopping-cart"></i></div>
+		</div>
+  		<div class="filterDiv breakfast">
+			<img src="../Images/error.png" alt="">
+			<div class="sidediv"><i class="fa fa-heart"></i><i class="fa fa-shopping-cart"></i></div>
+		</div>
+  		<div class="filterDiv lunch">
+			<img src="../Images/error.png" alt="">
+			<div class="sidediv"><i class="fa fa-heart"></i><i class="fa fa-shopping-cart"></i></div>
+		</div>
+  		<div class="filterDiv lunch">
+			<img src="../Images/error.png" alt="">
+			<div class="sidediv"><i class="fa fa-heart"></i><i class="fa fa-shopping-cart"></i></div>
+		</div>
+  		<div class="filterDiv lunch">
+			<img src="../Images/error.png" alt="">
+			<div class="sidediv"><i class="fa fa-heart"></i><i class="fa fa-shopping-cart"></i></div>
+		</div>
+  		<div class="filterDiv lunch">
+			<img src="../Images/error.png" alt="">
+			<div class="sidediv"><i class="fa fa-heart"></i><i class="fa fa-shopping-cart"></i></div>
+		</div>
+  		<div class="filterDiv lunch">
+			<img src="../Images/error.png" alt="">
+			<div class="sidediv"><i class="fa fa-heart"></i><i class="fa fa-shopping-cart"></i></div>
+		</div>
+		<div class="filterDiv dinner">
+			<img src="../Images/error.png" alt="">
+			<div class="sidediv"><i class="fa fa-heart"></i><i class="fa fa-shopping-cart"></i></div>
+		</div>
+		<div class="filterDiv dinner">
+			<img src="../Images/error.png" alt="">
+			<div class="sidediv"><i class="fa fa-heart"></i><i class="fa fa-shopping-cart"></i></div>
+		</div>
+		<div class="filterDiv dinner">
+			<img src="../Images/error.png" alt="">
+			<div class="sidediv"><i class="fa fa-heart"></i><i class="fa fa-shopping-cart"></i></div>
+		</div>
+		<div class="filterDiv dinner">
+			<img src="../Images/error.png" alt="">
+			<div class="sidediv"><i class="fa fa-heart"></i><i class="fa fa-shopping-cart"></i></div>
+		</div>
+		<div class="filterDiv dinner">
+			<img src="../Images/error.png" alt="">
+			<div class="sidediv"><i class="fa fa-heart"></i><i class="fa fa-shopping-cart"></i></div>
+		</div>
+	</div>
+	<script>
+		filterSelection("all")
+		function filterSelection(c) {
+  			var x, i;
+  			x = document.getElementsByClassName("filterDiv");
+  			if (c == "all") c = "";
+  			for (i = 0; i < x.length; i++) {
+    			w3RemoveClass(x[i], "show");
+    			if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  			}
+		}
+
+		function w3AddClass(element, name) {
+  			var i, arr1, arr2;
+  			arr1 = element.className.split(" ");
+  			arr2 = name.split(" ");
+  			for (i = 0; i < arr2.length; i++) {
+    			if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  			}
+		}
+
+		function w3RemoveClass(element, name) {
+  			var i, arr1, arr2;
+ 			arr1 = element.className.split(" ");
+  			arr2 = name.split(" ");
+  			for (i = 0; i < arr2.length; i++) {
+    			while (arr1.indexOf(arr2[i]) > -1) {
+      				arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    			}
+  			}
+  			element.className = arr1.join(" ");
+		}
+
+// Add active class to the current button (highlight it)
+		var btnContainer = document.getElementById("myBtnContainer")	;
+		var btns = btnContainer.getElementsByClassName("btn")	;
+		for (var i = 0; i < btns.length; i++) {	
+  			btns[i].addEventListener("click", function(){
+    			var current = document.getElementsByClassName("actives");
+    			current[0].className = current[0].className.replace(" actives", "");
+    			this.className += " actives";
+  			});
+		}
+	</script>
+
 </body>
+
+
 <footer>
 	<div class="letter">
 		<strong>If you have a product that you are interested in, please write to us. Please include as many details as possible in your enquires. Your inputs will gleatly help us to serve you better.</strong> 

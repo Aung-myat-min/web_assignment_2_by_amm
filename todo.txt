@@ -1,4 +1,7 @@
 16/10/2022
-compelete home page
+compelete home page-compeleted 
 grid the respices page
-grid and compelete also contact us page
+grid and compelete also contact us page-compeleted
+
+18/10/2022
+change the home page color using colors like red

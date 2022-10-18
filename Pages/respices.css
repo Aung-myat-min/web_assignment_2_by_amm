@@ -4,3 +4,73 @@ nav{
 	background-image: url("../Images/shopnow.jpg");
 	position: absolute;
 }
+body{
+	width: 100%;
+	height: auto;
+	display: inline-block;
+}
+.what{
+	width: 85%;
+	margin: 5vh 7.5%;
+	height: auto;
+}
+.filterDiv {
+	display: inline-block;
+	width: 26%;
+	margin: 3.5% 3.5%;
+	height: 30vh;
+	display: none;
+  }
+  
+  .show {
+	display: inline-block;
+  }
+  #myBtnContainer{
+	margin-top: 3vh;
+	width: 100%;
+	height: auto;
+	text-align: center;
+  }
+  #myBtnContainer button{
+	margin: 0 1vh;
+	width: 10vh;
+	height: 5vh;
+
+  }
+  /* Style the buttons */
+  .btn {
+	border: none;
+	outline: none;
+	background-color: white;
+	border:1px solid black;
+	border-style: hidden solid hidden solid;
+	cursor: pointer;
+  }
+  
+  .btn:hover {
+	background-color: #ddd;
+  }
+  .btn.actives{
+	color: white;
+	background-color: red;
+  }
+  .filterDiv img{
+	width: 90%;
+	height: 100%;
+	float: left;
+  }
+  .sidediv{
+	width: 10%;
+	float: right;
+  }
+  .sidediv i{
+	display: block;
+	margin-top: 2vh;
+	margin-left: 1vh;
+	font-size: 20px;
+  }
+  .sidediv i:hover{
+	color: red;
+	cursor: pointer;
+	transition: .5s ease-in;
+  }
