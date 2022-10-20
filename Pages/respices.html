@@ -8,6 +8,7 @@
 	<script src="https://kit.fontawesome.com/02cf822268.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="navigation-and-main.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
 </head>
 <body>
 	<nav>
@@ -29,29 +30,175 @@
 		</div>
 		<a href="contact.html">Contact Us <i class="fa fa-phone"></i></a>
 		<input type="search" name="" id="" placeholder="Search Here🔍">
-	</div>
+	</div>	
 	<div id="myBtnContainer">
-  		<button class="btn actives" onclick="filterSelection('all')"> Show all</button>
-  		<button class="btn" onclick="filterSelection('breakfast')"> Breakfast</button>
-  		<button class="btn" onclick="filterSelection('lunch')"> Lunch</button>
-  		<button class="btn" onclick="filterSelection('dinner')"> Dinner</button>
+  		<button class="btn1 actives" onclick="filterSelection('all')"> Show all</button>
+  		<button class="btn1" onclick="filterSelection('breakfast')"> Breakfast</button>
+  		<button class="btn1" onclick="filterSelection('lunch')"> Lunch</button>
+  		<button class="btn1" onclick="filterSelection('dinner')"> Dinner</button>
 	</div>
 	<div class="what">
 		<div class="filterDiv breakfast">
 			<img src="../Images/breakfast.jpg" alt="">
 			<div class="sidediv"><i class="fa fa-heart"></i><i class="fa fa-shopping-cart"></i></div>
+			<button id="detailshow" style="margin-right:10%; margin-top:1%;">Show more details</button>
+			<div class="model" id="detailmodel">
+				<div class="modelcontent">
+					<span class="close">&times;</span>
+					<img src="../Images/breakfast.jpg" alt="">
+					<ul class="just">
+						<li><label for="">Name:</label> Boiled Egg-(3pcs)</li>
+						<li><label for="">Price:</label> 100Ks</li>
+						<li><label for="">Calories:</label> 600cals</li>
+						<li><label for="">Rating:</label> <span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star"></span></li>
+						<li><label for="">Categories:</label> Breakfast</li>
+					</ul>
+					<div class="ingredients">
+						<h2>Ingredients</h2>
+						<ul>
+							<li>Raw Eggs - 3</li>
+							<li>Salt</li>
+							<li>water</li>
+						</ul>
+					</div>
+					<div class="steps">
+						<h1>Guide: Step by Step</h1>
+						<p> &emsp; Pour an inch of water into a pot and insert a steamer basket. Bring to a boil. Place the eggs in steamer basket, cover, and steam for 12 minutes</p>
+					</div>
+					<div class="addto">
+						<label for="">Quantity: </label><input type="number" name="" id="" placeholder="The number of dish (the default is 1)" value="1">
+						<button type="submit">Add to cart <i class="fa fa-cart"></i></button>
+					</div>
+				</div>
+				<script>
+					var modal = document.getElementById("detailmodel");
+					var butt = document.getElementById("detailshow");
+					var span = document.getElementsByClassName("close")[0];
+					butt.onclick = function(){
+						modal.style.display = "block";
+					}
+					span.onclick = function(){
+						modal.style.display = "none";
+					}
+					window.onclick = function(event) {
+						if (event.target == modal) {
+							modal.style.display = 'none';
+					}
+					}
+				</script>
+			</div>
 		</div>
   		<div class="filterDiv lunch">
 			<img src="../Images/lunch.jpg" alt="">
 			<div class="sidediv"><i class="fa fa-heart"></i><i class="fa fa-shopping-cart"></i></div>
+			<button id="detailshow2" style="margin-right:10%; margin-top:1%;">Show more details</button>
+			<div class="model" id="detailmodel2">
+				<div class="modelcontent">
+					<span class="close">&times;</span>
+					<img src="../Images/breakfast.jpg" alt="">
+					<ul class="just">
+						<li><label for="">Name:</label> Boiled Egg-(3pcs)</li>
+						<li><label for="">Price:</label> 100Ks</li>
+						<li><label for="">Calories:</label> 600cals</li>
+						<li><label for="">Rating:</label> <span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star"></span></li>
+						<li><label for="">Categories:</label> Breakfast</li>
+					</ul>
+					<div class="ingredients">
+						<h2>Ingredients</h2>
+						<ul>
+							<li>Raw Eggs - 3</li>
+							<li>Salt</li>
+							<li>water</li>
+						</ul>
+					</div>
+					<div class="steps">
+						<h1>Guide: Step by Step</h1>
+						<p> &emsp; Pour an inch of water into a pot and insert a steamer basket. Bring to a boil. Place the eggs in steamer basket, cover, and steam for 12 minutes</p>
+					</div>
+					<div class="addto">
+						<label for="">Quantity: </label><input type="number" name="" id="" placeholder="The number of dish (the default is 1)" value="1">
+						<button type="submit">Add to cart <i class="fa fa-cart"></i></button>
+					</div>
+				</div>
+				<script>
+					var modal = document.getElementById("detailmodel2");
+					var butt = document.getElementById("detailshow2");
+					var span = document.getElementsByClassName("close")[0];
+					butt.onclick = function(){
+						modal.style.display = "block";
+					}
+					span.onclick = function(){
+						modal.style.display = "none";
+					}
+					window.onclick = function(event) {
+						if (event.target == modal) {
+							modal.style.display = 'none';
+					}
+					}
+				</script>
+			</div>
 		</div>
   		<div class="filterDiv dinner">
 			<img src="../Images/dinner.jpg" alt="">
 			<div class="sidediv"><i class="fa fa-heart"></i><i class="fa fa-shopping-cart"></i></div>
-		</div>
-  		<div class="filterDiv breakfast">
-			<img src="../Images/error.png" alt="">
-			<div class="sidediv"><i class="fa fa-heart"></i><i class="fa fa-shopping-cart"></i></div>
+			<button id="detailshow1" style="margin-right:10%; margin-top:1%;">Show more details</button>
+			<div class="model" id="detailmodel1">
+				<div class="modelcontent">
+					<span class="close">&times;</span>
+					<img src="../Images/breakfast.jpg" alt="">
+					<ul class="just">
+						<li><label for="">Name:</label> Boiled Egg-(3pcs)</li>
+						<li><label for="">Price:</label> 100Ks</li>
+						<li><label for="">Calories:</label> 600cals</li>
+						<li><label for="">Rating:</label> <span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star"></span></li>
+						<li><label for="">Categories:</label> Breakfast</li>
+					</ul>
+					<div class="ingredients">
+						<h2>Ingredients</h2>
+						<ul>
+							<li>Raw Eggs - 3</li>
+							<li>Salt</li>
+							<li>water</li>
+						</ul>
+					</div>
+					<div class="steps">
+						<h1>Guide: Step by Step</h1>
+						<p> &emsp; Pour an inch of water into a pot and insert a steamer basket. Bring to a boil. Place the eggs in steamer basket, cover, and steam for 12 minutes</p>
+					</div>
+					<div class="addto">
+						<label for="">Quantity: </label><input type="number" name="" id="" placeholder="The number of dish (the default is 1)" value="1">
+						<button type="submit">Add to cart <i class="fa fa-cart"></i></button>
+					</div>
+				</div>
+				<script>
+					var modal = document.getElementById("detailmodel1");
+					var butt = document.getElementById("detailshow1");
+					var span = document.getElementsByClassName("close")[0];
+					butt.onclick = function(){
+						modal.style.display = "block";
+					}
+					span.onclick = function(){
+						modal.style.display = "none";
+					}
+					window.onclick = function(event) {
+						if (event.target == modal) {
+							modal.style.display = 'none';
+					}
+					}
+				</script>
+			</div>
 		</div>
   		<div class="filterDiv breakfast">
 			<img src="../Images/error.png" alt="">
@@ -82,14 +229,6 @@
 			<div class="sidediv"><i class="fa fa-heart"></i><i class="fa fa-shopping-cart"></i></div>
 		</div>
   		<div class="filterDiv lunch">
-			<img src="../Images/error.png" alt="">
-			<div class="sidediv"><i class="fa fa-heart"></i><i class="fa fa-shopping-cart"></i></div>
-		</div>
-  		<div class="filterDiv lunch">
-			<img src="../Images/error.png" alt="">
-			<div class="sidediv"><i class="fa fa-heart"></i><i class="fa fa-shopping-cart"></i></div>
-		</div>
-		<div class="filterDiv dinner">
 			<img src="../Images/error.png" alt="">
 			<div class="sidediv"><i class="fa fa-heart"></i><i class="fa fa-shopping-cart"></i></div>
 		</div>
@@ -144,8 +283,8 @@
 		}
 
 // Add active class to the current button (highlight it)
-		var btnContainer = document.getElementById("myBtnContainer")	;
-		var btns = btnContainer.getElementsByClassName("btn")	;
+		var btnContaine1r = document.getElementById("myBtnContainer")	;
+		var btns = btnContainer.getElementsByClassName("btn1")	;
 		for (var i = 0; i < btns.length; i++) {	
   			btns[i].addEventListener("click", function(){
     			var current = document.getElementsByClassName("actives");
@@ -153,7 +292,7 @@
     			this.className += " actives";
   			});
 		}
-	</script>
+	</script> 
 
 </body>
 

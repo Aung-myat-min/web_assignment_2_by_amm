@@ -18,7 +18,7 @@ body{
 	display: inline-block;
 	width: 26%;
 	margin: 3.5% 3.5%;
-	height: 30vh;
+	height: 35vh;
 	display: none;
   }
   
@@ -38,7 +38,7 @@ body{
 
   }
   /* Style the buttons */
-  .btn {
+  .btn1 {
 	border: none;
 	outline: none;
 	background-color: white;
@@ -47,16 +47,16 @@ body{
 	cursor: pointer;
   }
   
-  .btn:hover {
+  .btn1:hover {
 	background-color: #ddd;
   }
-  .btn.actives{
+  .btn1.actives{
 	color: white;
 	background-color: red;
   }
   .filterDiv img{
 	width: 90%;
-	height: 100%;
+	height: 90%;
 	float: left;
   }
   .sidediv{
@@ -74,3 +74,147 @@ body{
 	cursor: pointer;
 	transition: .5s ease-in;
   }
+  /*===================================*/
+.checked{
+	color: yellow;
+}
+.filterDiv button{
+	border-radius: 16px;
+	cursor: pointer;
+	border: none;
+	height: 9%;
+	width: 20vh;
+	border-color: black;
+	background-color: red;
+	color: white;
+	float: right;
+}
+.filterDiv button:hover{
+	transition: .4s ease-in-out;
+	background-color: black;
+	border: 1px solid red;
+}
+.model{
+	top: 0;
+	left: 0;
+	right: 0;
+	overflow: auto;
+	height: 100%;
+	width: 100%;
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 3%;
+	background-color: black;
+	background-color: rgba(0, 0, 0, .4);
+}
+.modelcontent{
+	background-color: white;
+	margin: auto;
+	border: 3px solid red;
+	width: 60%;
+	height: 90%;
+}
+.modelcontent img{
+	display:  inline-block;
+	width: 35%;
+	height: 35%;
+	margin: 5% 0 0 5%;
+}
+.just{
+	margin-top: 3%;
+	width: 50%;
+	height: 40%;
+	float: right;
+}
+.just li{
+	list-style-type: none;
+	margin: 4vh 0;
+	margin-left: 10%;
+}
+.modelcontent label{
+	font-weight: bold;
+	margin-right: 5px;
+}
+.ingredients{
+	float: left;
+	width: 30%;
+	height: 45%;
+	margin: 5% 0 0 5%;
+	border: 2px solid red;
+	overflow: auto;
+}
+.ingredients h2{
+	text-align: center;
+	display: inline-block;
+	width: 100%;
+	line-height: 5vh;
+	border: 1px solid black;
+	border-style: hidden hidden solid hidden;
+}
+.ingredients ul{
+	margin-top: 2vh;
+	margin-left: 4vh;
+}
+.ingredients li{
+	margin-top: 10px;
+	font-size: 20px;
+}
+.steps{
+	width: 45%;
+	height: 35%;
+	margin-right: 10%;
+	margin-top: 3%;
+	float: right;
+	overflow: auto;
+}
+.steps h1{
+	width: 100%;
+	text-align: center;
+	border-bottom: 1px double red;
+	margin-bottom: 3vh;
+}
+.steps p{
+	text-align: justify;
+}
+.addto{
+	width: auto;
+	height: auto;
+	margin: 2vh 10%;
+	float: right;
+}
+.addto input{
+	height: 4vh;
+	padding: 2px;
+	font-size: 13px;
+	color: red;
+	margin-right: 3px;
+	border-color: red;
+}
+.addto button{
+	cursor: pointer;
+	border-color: red;
+	float: right;
+	height: 5vh;
+	width: 15vh;
+	border-radius: 10px;
+	margin-bottom: 1%;
+}
+.addto button:hover{
+	background-color: red;
+	color: white;
+	transition: .4s ease-in-out;
+}
+.close{
+	margin-right: 2vh;
+	color: #aaaaaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+  }
+  
+.close:hover,.close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
