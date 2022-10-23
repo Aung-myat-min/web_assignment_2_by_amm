@@ -38,7 +38,21 @@
     float: right;
 }
 .subimg{
-    width: 80%;
-    margin: 0 10%;
-    background-color: black;
+    width: 100%;
+    margin: 0 10%;   
+    height: 25vh;
+    float: left;
+    margin-left: 0;
+    margin-top: 5vh;
+    text-align: center;
+    margin-bottom: 5vh;
+}
+.subimg img{
+    width: 25%;
+    height: 90%;
+    display: inline-block;
+    margin: 0 5vh;
+}
+.addto{
+    margin-right: 5vh;
 }
