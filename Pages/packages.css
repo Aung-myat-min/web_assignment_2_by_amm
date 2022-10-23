@@ -2,10 +2,12 @@
     margin: 20vh 10% 10vh 10%;
     width: 80%;
     height: 40vh;
-    border: 1px solid black;
+    border: 1px solid red;
     padding: 1vh;
 }
 .app h2{
+    color: red;
+    text-decoration: underline;
     float: right;
     text-align: center;
     font-size: 30px;
