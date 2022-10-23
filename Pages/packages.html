@@ -42,14 +42,14 @@
 		<div class="filterDiv breakfast">
 			<img src="../Images/breakfast.jpg" alt="">
 			<div class="sidediv"><i class="fa fa-heart"></i><i class="fa fa-shopping-cart"></i></div>
-			<button id="detailshow" style="margin-right:10%; margin-top:1%;">Show more details</button>
-			<div class="model" id="detailmodel">
+			<button id="detailshows" style="margin-right:10%; margin-top:1%;">Show more details</button>
+			<div class="model" id="detailmodels">
 				<div class="modelcontent">
 					<span class="close">&times;</span>
 					<img src="../Images/breakfast.jpg" alt="">
 					<ul class="just">
 						<li><label for="">Name:</label> Boiled Egg-(3pcs)</li>
-						<li><label for="">Price:</label> 100Ks</li>
+						<li><label for="">Price:</label> 1000Ks</li>
 						<li><label for="">Calories:</label> 600cals</li>
 						<li><label for="">Rating:</label> <span class="fa fa-star checked"></span>
 							<span class="fa fa-star checked"></span>
@@ -58,17 +58,10 @@
 							<span class="fa fa-star"></span></li>
 						<li><label for="">Categories:</label> Breakfast</li>
 					</ul>
-					<div class="ingredients">
-						<h2>Ingredients</h2>
-						<ul>
-							<li>Raw Eggs - 3</li>
-							<li>Salt</li>
-							<li>water</li>
-						</ul>
-					</div>
-					<div class="steps">
-						<h1>Guide: Step by Step</h1>
-						<p> &emsp; Pour an inch of water into a pot and insert a steamer basket. Bring to a boil. Place the eggs in steamer basket, cover, and steam for 12 minutes</p>
+					<div class="subimg">
+						<img src="../Images/error.png" alt="">
+						<img src="../Images/error.png" alt="">
+						<img src="../Images/error.png" alt="">
 					</div>
 					<div class="addto">
 						<label for="">Quantity: </label><input type="number" name="" id="" placeholder="The number of dish (the default is 1)" value="1">
@@ -76,8 +69,8 @@
 					</div>
 				</div>
 				<script>
-					var modal = document.getElementById("detailmodel");
-					var butt = document.getElementById("detailshow");
+					var modal = document.getElementById("detailmodels");
+					var butt = document.getElementById("detailshows");
 					var span = document.getElementsByClassName("close")[0];
 					butt.onclick = function(){
 						modal.style.display = "block";

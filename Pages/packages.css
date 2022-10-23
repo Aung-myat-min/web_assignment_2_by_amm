@@ -37,3 +37,8 @@
     margin: 5vh 10vh 0 0;
     float: right;
 }
+.subimg{
+    width: 80%;
+    margin: 0 10%;
+    background-color: black;
+}
