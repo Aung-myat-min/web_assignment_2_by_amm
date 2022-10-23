@@ -1,0 +1,37 @@
+.app{
+    margin: 20vh 10% 10vh 10%;
+    width: 80%;
+    height: 40vh;
+    border: 1px solid black;
+    padding: 1vh;
+}
+.app h2{
+    float: right;
+    text-align: center;
+    font-size: 30px;
+    width: 65%;
+    line-height: 10vh;
+}
+#appicon{
+    float: left;
+    width: 28%;
+    height: 80%;
+    margin-left: 5%;
+    margin-top: 4vh;
+}
+.infor{
+    float: right;
+    width: 60%;
+    margin-left: 4vh;
+    margin-right: 3%;
+    height: 40%;
+    overflow: auto;
+}
+.infor p{
+    text-align: justify;
+}
+.getiton{
+    height: 15%;
+    margin: 5vh 10vh 0 0;
+    float: right;
+}
