@@ -149,7 +149,7 @@ th{
 	height: 78vh;
 	width: 28%;
 	color: white;
-	background: linear-gradient(to right, #DC281E, #F00000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: linear-gradient(to right, #DC281E, #F00000); 
 	border-radius: 10px;
 	box-shadow: 0 2px 5px 0;
 }
@@ -226,6 +226,7 @@ fieldset legend{
 	background-size: 42vh 40vh;
 }
 .item2{
+	margin: 3vh 5% 0 5%;
 	background-image: url('../Images/serviceexample.jpg');
 }
 
