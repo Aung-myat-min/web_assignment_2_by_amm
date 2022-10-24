@@ -16,10 +16,11 @@ body{
 }
 .filterDiv {
 	display: inline-block;
-	width: 26%;
-	margin: 3.5% 3.5%;
-	height: 35vh;
+	width: 24%;
+	margin: 3.5% 4%;
+	height: 30vh;
 	display: none;
+	padding: .4%;
   }
   
   .show {
@@ -50,23 +51,22 @@ body{
   .btn1:hover {
 	background-color: #ddd;
   }
-  .btn1.actives{
+  .actives{
 	color: white;
 	background-color: red;
   }
   .filterDiv img{
-	width: 90%;
+	width: 93%;
 	height: 90%;
 	float: left;
   }
   .sidediv{
-	width: 10%;
-	float: right;
+	width: 40%;
+	float: left;
   }
   .sidediv i{
-	display: block;
-	margin-top: 2vh;
-	margin-left: 1vh;
+	margin-top: 2%;
+	margin-left: 3vh;
 	font-size: 20px;
   }
   .sidediv i:hover{
@@ -88,6 +88,7 @@ body{
 	background-color: red;
 	color: white;
 	float: right;
+	margin-right: 2%;
 }
 .filterDiv button:hover{
 	transition: .4s ease-in-out;

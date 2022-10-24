@@ -31,8 +31,8 @@ nav{
 	display: inline-block;
 	width: 80%;
 	height: 65vh;
-	background-color: #ff0101;
-	margin: 0 10%; 	
+	background-color: #FF4B2B;
+	margin: 5vh 10%; 	
 	box-shadow: 0 0 10px 5px gray;
 }
 .left{
@@ -114,7 +114,7 @@ nav{
 	height: 120vh;
 	display: inline-block;
 	width: 80%;
-	margin: 0 10%;	
+	margin: 5vh 10%;	
 	box-shadow: 0 0 10px 5px gray;
 	overflow-y: scroll;
 }
@@ -123,18 +123,20 @@ nav{
 	margin: 2vh 10%;
 	width: 80%;
 	height: auto;
+	text-align: justify;
 }
 .history h1{
 	text-align: center;
 	color: #ff0101;
 	margin-bottom: 3vh;
 }
+
 .bar{
 	display: inline-block;
 	width: 70%;
 	height: 10vh;
 	margin: 3vh 15%;
-	background-color: #ff0101;
+	background-color:#FF4B2B;
 	color: white;
 	cursor: pointer;
 	text-align: left;
@@ -154,11 +156,12 @@ nav{
 	width: 70%;
 	height: auto;
 	margin: 3vh 15%;
+	text-align: justify;
 }
 
 /*===========================================*/
 .contactusletter *:not(legend){
-	font-size: 20px;
+	font-size: 15px;
 }
 
 .contactusletter legend{
@@ -169,11 +172,11 @@ nav{
 
 }
 .contactusletter fieldset{
-	width: 90%;
-	margin-left: 10%;
+	width: 88%;
+	margin-left: 5%;
 	height: auto;
 	background-color: rgba(255, 0, 0, 1);
-	margin-top: 10vh;
+	margin-top: 8vh;
 	border: 0px;
 	box-shadow: 0 0 5px 2px red;
 }

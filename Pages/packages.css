@@ -1,4 +1,5 @@
 .app{
+    display: inline-block;
     margin: 20vh 10% 10vh 10%;
     width: 80%;
     height: 40vh;

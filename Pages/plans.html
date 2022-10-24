@@ -3,17 +3,17 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="respices.css">
 	<title>May Hnin Si</title>
-	<link rel="stylesheet" type="text/css" href="respices.css">
 	<script src="https://kit.fontawesome.com/02cf822268.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="navigation-and-main.css">
 	<link rel="stylesheet" href="plans.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	
+	<link rel="stylesheet" href="packages.css">
 </head>
 <body>
 	<nav>
-		<div class="heading"><a href="Home.html" style="color: white;">PLANS📢</a></div>
+		<div class="heading"><a href="Home.html" style="color: black;">PLANS📢</a></div>
 		<div class="status">
 			<img src="../Images/status.png" alt="Status LOGO">
 		</div>
@@ -34,871 +34,204 @@
 		<input type="search" name="" id="" placeholder="Search Here🔍">
 	</div>	
 	<div id="myBtnContainer">
-  		<button class="btn1 actives" onclick="filterSelection('all')"> Show all</button>
-  		<button class="btn1" onclick="filterSelection('breakfast')"> Breakfast</button>
-  		<button class="btn1" onclick="filterSelection('lunch')"> Lunch</button>
-  		<button class="btn1" onclick="filterSelection('dinner')"> Dinner</button>
+  		<button class="btn1 actives"> Show all</button>
+  		<button class="btn1" id="btn">Beginner</button>
+  		<button class="btn1" id="btn2">Everyday</button>
+  		<button class="btn1" id="btn3">Deluex</button>
 	</div>
-	<div class="what">
-		<div class="filterDiv breakfast">
-			<img src="../Images/breakfast.jpg" alt="">
-			<div class="sidediv"><i class="fa fa-heart"></i><i class="fa fa-shopping-cart"></i></div>
-			<button id="detailshow" style="margin-right:10%; margin-top:1%;">Show more details</button>
-			<div class="model" id="detailmodel">
-				<div class="modelcontent">
-					<span class="close">&times;</span>
-					<img src="../Images/breakfast.jpg" alt="">
-					<ul class="just">
-						<li><label for="">Name:</label> Boiled Egg-(3pcs)</li>
-						<li><label for="">Price:</label> 100Ks</li>
-						<li><label for="">Calories:</label> 600cals</li>
-						<li><label for="">Rating:</label> <span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star"></span></li>
-						<li><label for="">Categories:</label> Breakfast</li>
-					</ul>
-					<div class="ingredients">
-						<h2>Ingredients</h2>
-						<ul>
-							<li>Raw Eggs - 3</li>
-							<li>Salt</li>
-							<li>water</li>
-						</ul>
-					</div>
-					<div class="steps">
-						<h1>Guide: Step by Step</h1>
-						<p> &emsp; Pour an inch of water into a pot and insert a steamer basket. Bring to a boil. Place the eggs in steamer basket, cover, and steam for 12 minutes</p>
-					</div>
-					<div class="addto">
-						<label for="">Quantity: </label><input type="number" name="" id="" placeholder="The number of dish (the default is 1)" value="1">
-						<button type="submit">Add to cart <i class="fa fa-cart"></i></button>
-					</div>
-				</div>
-				<script>
-					var modal = document.getElementById("detailmodel");
-					var butt = document.getElementById("detailshow");
-					var span = document.getElementsByClassName("close")[0];
-					butt.onclick = function(){
-						modal.style.display = "block";
-					}
-					span.onclick = function(){
-						modal.style.display = "none";
-					}
-					window.onclick = function(event) {
-						if (event.target == modal) {
-							modal.style.display = 'none';
-					}
-					}
-				</script>
-			</div>
+	<div class="primary">
+		<i class="fa-solid fa-cutlery" id="spoons"></i>
+		<div class="smalltext">
+		  <h6>Meal Plan</h6>
+		  <p>Eat Healthy All Week Long</p>
 		</div>
-  		<div class="filterDiv lunch">
-			<img src="../Images/lunch.jpg" alt="">
-			<div class="sidediv"><i class="fa fa-heart"></i><i class="fa fa-shopping-cart"></i></div>
-			<button id="detailshow2" style="margin-right:10%; margin-top:1%;">Show more details</button>
-			<div class="model" id="detailmodel2">
-				<div class="modelcontent">
-					<span class="close">&times;</span>
-					<img src="../Images/breakfast.jpg" alt="">
-					<ul class="just">
-						<li><label for="">Name:</label> Boiled Egg-(3pcs)</li>
-						<li><label for="">Price:</label> 1000Ks</li>
-						<li><label for="">Calories:</label> 600cals</li>
-						<li><label for="">Rating:</label> <span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star"></span></li>
-						<li><label for="">Categories:</label> Breakfast</li>
-					</ul>
-					<div class="ingredients">
-						<h2>Ingredients</h2>
-						<ul>
-							<li>Raw Eggs - 3</li>
-							<li>Salt</li>
-							<li>water</li>
-						</ul>
-					</div>
-					<div class="steps">
-						<h1>Guide: Step by Step</h1>
-						<p> &emsp; Pour an inch of water into a pot and insert a steamer basket. Bring to a boil. Place the eggs in steamer basket, cover, and steam for 12 minutes</p>
-					</div>
-					<div class="addto">
-						<label for="">Quantity: </label><input type="number" name="" id="" placeholder="The number of dish (the default is 1)" value="1">
-						<button type="submit">Add to cart <i class="fa fa-cart"></i></button>
-					</div>
-				</div>
-				<script>
-					var modal = document.getElementById("detailmodel2");
-					var butt = document.getElementById("detailshow2");
-					var span = document.getElementsByClassName("close")[0];
-					butt.onclick = function(){
-						modal.style.display = "block";
-					}
-					span.onclick = function(){
-						modal.style.display = "none";
-					}
-					window.onclick = function(event) {
-						if (event.target == modal) {
-							modal.style.display = 'none';
-					}
-					}
-				</script>
-			</div>
-		</div>
-  		<div class="filterDiv dinner">
-			<img src="../Images/dinner.jpg" alt="">
-			<div class="sidediv"><i class="fa fa-heart"></i><i class="fa fa-shopping-cart"></i></div>
-			<button id="detailshow1" style="margin-right:10%; margin-top:1%;">Show more details</button>
-			<div class="model" id="detailmodel1">
-				<div class="modelcontent">
-					<span class="close">&times;</span>
-					<img src="../Images/breakfast.jpg" alt="">
-					<ul class="just">
-						<li><label for="">Name:</label> Boiled Egg-(3pcs)</li>
-						<li><label for="">Price:</label> 100Ks</li>
-						<li><label for="">Calories:</label> 600cals</li>
-						<li><label for="">Rating:</label> <span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star"></span></li>
-						<li><label for="">Categories:</label> Breakfast</li>
-					</ul>
-					<div class="ingredients">
-						<h2>Ingredients</h2>
-						<ul>
-							<li>Raw Eggs - 3</li>
-							<li>Salt</li>
-							<li>water</li>
-						</ul>
-					</div>
-					<div class="steps">
-						<h1>Guide: Step by Step</h1>
-						<p> &emsp; Pour an inch of water into a pot and insert a steamer basket. Bring to a boil. Place the eggs in steamer basket, cover, and steam for 12 minutes</p>
-					</div>
-					<div class="addto">
-						<label for="">Quantity: </label><input type="number" name="" id="" placeholder="The number of dish (the default is 1)" value="1">
-						<button type="submit">Add to cart <i class="fa fa-cart"></i></button>
-					</div>
-				</div>
-				<script>
-					var modal = document.getElementById("detailmodel1");
-					var butt = document.getElementById("detailshow1");
-					var span = document.getElementsByClassName("close")[0];
-					butt.onclick = function(){
-						modal.style.display = "block";
-					}
-					span.onclick = function(){
-						modal.style.display = "none";
-					}
-					window.onclick = function(event) {
-						if (event.target == modal) {
-							modal.style.display = 'none';
-					}
-					}
-				</script>
-			</div>
-		</div>
-  		<div class="filterDiv breakfast">
-			<img src="../photos/vegrecp.jpeg" alt="">
-			<div class="sidediv"><i class="fa fa-heart"></i><i class="fa fa-shopping-cart"></i></div>
-			<button id="detailshow3" style="margin-right:10%; margin-top:1%;">Show more details</button>
-			<div class="model" id="detailmodel3">
-				<div class="modelcontent">
-					<span class="close">&times;</span>
-					<img src="../Images/breakfast.jpg" alt="">
-					<ul class="just">
-						<li><label for="">Name:</label> Boiled Egg-(3pcs)</li>
-						<li><label for="">Price:</label> 100Ks</li>
-						<li><label for="">Calories:</label> 600cals</li>
-						<li><label for="">Rating:</label> <span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star"></span></li>
-						<li><label for="">Categories:</label> Breakfast</li>
-					</ul>
-					<div class="ingredients">
-						<h2>Ingredients</h2>
-						<ul>
-							<li>Raw Eggs - 3</li>
-							<li>Salt</li>
-							<li>water</li>
-						</ul>
-					</div>
-					<div class="steps">
-						<h1>Guide: Step by Step</h1>
-						<p> &emsp; Pour an inch of water into a pot and insert a steamer basket. Bring to a boil. Place the eggs in steamer basket, cover, and steam for 12 minutes</p>
-					</div>
-					<div class="addto">
-						<label for="">Quantity: </label><input type="number" name="" id="" placeholder="The number of dish (the default is 1)" value="1">
-						<button type="submit">Add to cart <i class="fa fa-cart"></i></button>
-					</div>
-				</div>
-				<script>
-					var modal = document.getElementById("detailmodel3");
-					var butt = document.getElementById("detailshow3");
-					var span = document.getElementsByClassName("close")[0];
-					butt.onclick = function(){
-						modal.style.display = "block";
-					}
-					span.onclick = function(){
-						modal.style.display = "none";
-					}
-					window.onclick = function(event) {
-						if (event.target == modal) {
-							modal.style.display = 'none';
-					}
-					}
-				</script>
-			</div>
-		</div>
-  		<div class="filterDiv breakfast">
-			<img src="../photos/vegrecp2.jpeg" alt="">
-			<div class="sidediv"><i class="fa fa-heart"></i><i class="fa fa-shopping-cart"></i></div>
-			<button id="detailshow5" style="margin-right:10%; margin-top:1%;">Show more details</button>
-			<div class="model" id="detailmodel5">
-				<div class="modelcontent">
-					<span class="close">&times;</span>
-					<img src="../Images/breakfast.jpg" alt="">
-					<ul class="just">
-						<li><label for="">Name:</label> Boiled Egg-(3pcs)</li>
-						<li><label for="">Price:</label> 100Ks</li>
-						<li><label for="">Calories:</label> 600cals</li>
-						<li><label for="">Rating:</label> <span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star"></span></li>
-						<li><label for="">Categories:</label> Breakfast</li>
-					</ul>
-					<div class="ingredients">
-						<h2>Ingredients</h2>
-						<ul>
-							<li>Raw Eggs - 3</li>
-							<li>Salt</li>
-							<li>water</li>
-						</ul>
-					</div>
-					<div class="steps">
-						<h1>Guide: Step by Step</h1>
-						<p> &emsp; Pour an inch of water into a pot and insert a steamer basket. Bring to a boil. Place the eggs in steamer basket, cover, and steam for 12 minutes</p>
-					</div>
-					<div class="addto">
-						<label for="">Quantity: </label><input type="number" name="" id="" placeholder="The number of dish (the default is 1)" value="1">
-						<button type="submit">Add to cart <i class="fa fa-cart"></i></button>
-					</div>
-				</div>
-				<script>
-					var modal = document.getElementById("detailmodel5");
-					var butt = document.getElementById("detailshow5");
-					var span = document.getElementsByClassName("close")[0];
-					butt.onclick = function(){
-						modal.style.display = "block";
-					}
-					span.onclick = function(){
-						modal.style.display = "none";
-					}
-					window.onclick = function(event) {
-						if (event.target == modal) {
-							modal.style.display = 'none';
-					}
-					}
-				</script>
-			</div>
-		</div>
-  		<div class="filterDiv breakfast">
-			<img src="../photos/vegrecp3.jpeg" alt="">
-			<div class="sidediv"><i class="fa fa-heart"></i><i class="fa fa-shopping-cart"></i></div>
-			<button id="detailshow6" style="margin-right:10%; margin-top:1%;">Show more details</button>
-			<div class="model" id="detailmodel6">
-				<div class="modelcontent">
-					<span class="close">&times;</span>
-					<img src="../Images/breakfast.jpg" alt="">
-					<ul class="just">
-						<li><label for="">Name:</label> Boiled Egg-(3pcs)</li>
-						<li><label for="">Price:</label> 100Ks</li>
-						<li><label for="">Calories:</label> 600cals</li>
-						<li><label for="">Rating:</label> <span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star"></span></li>
-						<li><label for="">Categories:</label> Breakfast</li>
-					</ul>
-					<div class="ingredients">
-						<h2>Ingredients</h2>
-						<ul>
-							<li>Raw Eggs - 3</li>
-							<li>Salt</li>
-							<li>water</li>
-						</ul>
-					</div>
-					<div class="steps">
-						<h1>Guide: Step by Step</h1>
-						<p> &emsp; Pour an inch of water into a pot and insert a steamer basket. Bring to a boil. Place the eggs in steamer basket, cover, and steam for 12 minutes</p>
-					</div>
-					<div class="addto">
-						<label for="">Quantity: </label><input type="number" name="" id="" placeholder="The number of dish (the default is 1)" value="1">
-						<button type="submit">Add to cart <i class="fa fa-cart"></i></button>
-					</div>
-				</div>
-				<script>
-					var modal = document.getElementById("detailmodel6");
-					var butt = document.getElementById("detailshow6");
-					var span = document.getElementsByClassName("close")[0];
-					butt.onclick = function(){
-						modal.style.display = "block";
-					}
-					span.onclick = function(){
-						modal.style.display = "none";
-					}
-					window.onclick = function(event) {
-						if (event.target == modal) {
-							modal.style.display = 'none';
-					}
-					}
-				</script>
-			</div>
-		</div>
-  		<div class="filterDiv breakfast">
-			<img src="../photos/vegrecp4.jpeg" alt="">
-			<div class="sidediv"><i class="fa fa-heart"></i><i class="fa fa-shopping-cart"></i></div>
-			<button id="detailshow7" style="margin-right:10%; margin-top:1%;">Show more details</button>
-			<div class="model" id="detailmodel7">
-				<div class="modelcontent">
-					<span class="close">&times;</span>
-					<img src="../Images/breakfast.jpg" alt="">
-					<ul class="just">
-						<li><label for="">Name:</label> Boiled Egg-(3pcs)</li>
-						<li><label for="">Price:</label> 100Ks</li>
-						<li><label for="">Calories:</label> 600cals</li>
-						<li><label for="">Rating:</label> <span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star"></span></li>
-						<li><label for="">Categories:</label> Breakfast</li>
-					</ul>
-					<div class="ingredients">
-						<h2>Ingredients</h2>
-						<ul>
-							<li>Raw Eggs - 3</li>
-							<li>Salt</li>
-							<li>water</li>
-						</ul>
-					</div>
-					<div class="steps">
-						<h1>Guide: Step by Step</h1>
-						<p> &emsp; Pour an inch of water into a pot and insert a steamer basket. Bring to a boil. Place the eggs in steamer basket, cover, and steam for 12 minutes</p>
-					</div>
-					<div class="addto">
-						<label for="">Quantity: </label><input type="number" name="" id="" placeholder="The number of dish (the default is 1)" value="1">
-						<button type="submit">Add to cart <i class="fa fa-cart"></i></button>
-					</div>
-				</div>
-				<script>
-					var modal = document.getElementById("detailmodel7");
-					var butt = document.getElementById("detailshow7");
-					var span = document.getElementsByClassName("close")[0];
-					butt.onclick = function(){
-						modal.style.display = "block";
-					}
-					span.onclick = function(){
-						modal.style.display = "none";
-					}
-					window.onclick = function(event) {
-						if (event.target == modal) {
-							modal.style.display = 'none';
-					}
-					}
-				</script>
-			</div>
-		</div>
-  		<div class="filterDiv lunch">
-			<img src="../photos/vegrecp5.jpeg" alt="">
-			<div class="sidediv"><i class="fa fa-heart"></i><i class="fa fa-shopping-cart"></i></div>
-			<button id="detailshow8" style="margin-right:10%; margin-top:1%;">Show more details</button>
-			<div class="model" id="detailmodel8">
-				<div class="modelcontent">
-					<span class="close">&times;</span>
-					<img src="../Images/breakfast.jpg" alt="">
-					<ul class="just">
-						<li><label for="">Name:</label> Boiled Egg-(3pcs)</li>
-						<li><label for="">Price:</label> 100Ks</li>
-						<li><label for="">Calories:</label> 600cals</li>
-						<li><label for="">Rating:</label> <span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star"></span></li>
-						<li><label for="">Categories:</label> Breakfast</li>
-					</ul>
-					<div class="ingredients">
-						<h2>Ingredients</h2>
-						<ul>
-							<li>Raw Eggs - 3</li>
-							<li>Salt</li>
-							<li>water</li>
-						</ul>
-					</div>
-					<div class="steps">
-						<h1>Guide: Step by Step</h1>
-						<p> &emsp; Pour an inch of water into a pot and insert a steamer basket. Bring to a boil. Place the eggs in steamer basket, cover, and steam for 12 minutes</p>
-					</div>
-					<div class="addto">
-						<label for="">Quantity: </label><input type="number" name="" id="" placeholder="The number of dish (the default is 1)" value="1">
-						<button type="submit">Add to cart <i class="fa fa-cart"></i></button>
-					</div>
-				</div>
-				<script>
-					var modal = document.getElementById("detailmodel8");
-					var butt = document.getElementById("detailshow8");
-					var span = document.getElementsByClassName("close")[0];
-					butt.onclick = function(){
-						modal.style.display = "block";
-					}
-					span.onclick = function(){
-						modal.style.display = "none";
-					}
-					window.onclick = function(event) {
-						if (event.target == modal) {
-							modal.style.display = 'none';
-					}
-					}
-				</script>
-			</div>
-		</div>
-  		<div class="filterDiv lunch">
-			<img src="../photos/vegrecp6.jpeg" alt="">
-			<div class="sidediv"><i class="fa fa-heart"></i><i class="fa fa-shopping-cart"></i></div>
-			<button id="detailshow9" style="margin-right:10%; margin-top:1%;">Show more details</button>
-			<div class="model" id="detailmodel9">
-				<div class="modelcontent">
-					<span class="close">&times;</span>
-					<img src="../Images/breakfast.jpg" alt="">
-					<ul class="just">
-						<li><label for="">Name:</label> Boiled Egg-(3pcs)</li>
-						<li><label for="">Price:</label> 100Ks</li>
-						<li><label for="">Calories:</label> 600cals</li>
-						<li><label for="">Rating:</label> <span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star"></span></li>
-						<li><label for="">Categories:</label> Breakfast</li>
-					</ul>
-					<div class="ingredients">
-						<h2>Ingredients</h2>
-						<ul>
-							<li>Raw Eggs - 3</li>
-							<li>Salt</li>
-							<li>water</li>
-						</ul>
-					</div>
-					<div class="steps">
-						<h1>Guide: Step by Step</h1>
-						<p> &emsp; Pour an inch of water into a pot and insert a steamer basket. Bring to a boil. Place the eggs in steamer basket, cover, and steam for 12 minutes</p>
-					</div>
-					<div class="addto">
-						<label for="">Quantity: </label><input type="number" name="" id="" placeholder="The number of dish (the default is 1)" value="1">
-						<button type="submit">Add to cart <i class="fa fa-cart"></i></button>
-					</div>
-				</div>
-				<script>
-					var modal = document.getElementById("detailmodel9");
-					var butt = document.getElementById("detailshow9");
-					var span = document.getElementsByClassName("close")[0];
-					butt.onclick = function(){
-						modal.style.display = "block";
-					}
-					span.onclick = function(){
-						modal.style.display = "none";
-					}
-					window.onclick = function(event) {
-						if (event.target == modal) {
-							modal.style.display = 'none';
-					}
-					}
-				</script>
-			</div>
-		</div>
-  		<div class="filterDiv lunch">
-			<img src="../photos/healthyrecp.jpeg" alt="">
-			<div class="sidediv"><i class="fa fa-heart"></i><i class="fa fa-shopping-cart"></i></div>
-			<button id="detailshow10" style="margin-right:10%; margin-top:1%;">Show more details</button>
-			<div class="model" id="detailmodel10">
-				<div class="modelcontent">
-					<span class="close">&times;</span>
-					<img src="../Images/breakfast.jpg" alt="">
-					<ul class="just">
-						<li><label for="">Name:</label> Boiled Egg-(3pcs)</li>
-						<li><label for="">Price:</label> 100Ks</li>
-						<li><label for="">Calories:</label> 600cals</li>
-						<li><label for="">Rating:</label> <span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star"></span></li>
-						<li><label for="">Categories:</label> Breakfast</li>
-					</ul>
-					<div class="ingredients">
-						<h2>Ingredients</h2>
-						<ul>
-							<li>Raw Eggs - 3</li>
-							<li>Salt</li>
-							<li>water</li>
-						</ul>
-					</div>
-					<div class="steps">
-						<h1>Guide: Step by Step</h1>
-						<p> &emsp; Pour an inch of water into a pot and insert a steamer basket. Bring to a boil. Place the eggs in steamer basket, cover, and steam for 12 minutes</p>
-					</div>
-					<div class="addto">
-						<label for="">Quantity: </label><input type="number" name="" id="" placeholder="The number of dish (the default is 1)" value="1">
-						<button type="submit">Add to cart <i class="fa fa-cart"></i></button>
-					</div>
-				</div>
-				<script>
-					var modal = document.getElementById("detailmodel10");
-					var butt = document.getElementById("detailshow10");
-					var span = document.getElementsByClassName("close")[0];
-					butt.onclick = function(){
-						modal.style.display = "block";
-					}
-					span.onclick = function(){
-						modal.style.display = "none";
-					}
-					window.onclick = function(event) {
-						if (event.target == modal) {
-							modal.style.display = 'none';
-					}
-					}
-				</script>
-			</div>
-		</div>
-  		<div class="filterDiv lunch">
-			<img src="../photos/healthyrecp2.jpeg" alt="">
-			<div class="sidediv"><i class="fa fa-heart"></i><i class="fa fa-shopping-cart"></i></div>
-			<button id="detailshow11" style="margin-right:10%; margin-top:1%;">Show more details</button>
-			<div class="model" id="detailmodel11">
-				<div class="modelcontent">
-					<span class="close">&times;</span>
-					<img src="../Images/breakfast.jpg" alt="">
-					<ul class="just">
-						<li><label for="">Name:</label> Boiled Egg-(3pcs)</li>
-						<li><label for="">Price:</label> 100Ks</li>
-						<li><label for="">Calories:</label> 600cals</li>
-						<li><label for="">Rating:</label> <span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star"></span></li>
-						<li><label for="">Categories:</label> Breakfast</li>
-					</ul>
-					<div class="ingredients">
-						<h2>Ingredients</h2>
-						<ul>
-							<li>Raw Eggs - 3</li>
-							<li>Salt</li>
-							<li>water</li>
-						</ul>
-					</div>
-					<div class="steps">
-						<h1>Guide: Step by Step</h1>
-						<p> &emsp; Pour an inch of water into a pot and insert a steamer basket. Bring to a boil. Place the eggs in steamer basket, cover, and steam for 12 minutes</p>
-					</div>
-					<div class="addto">
-						<label for="">Quantity: </label><input type="number" name="" id="" placeholder="The number of dish (the default is 1)" value="1">
-						<button type="submit">Add to cart <i class="fa fa-cart"></i></button>
-					</div>
-				</div>
-				<script>
-					var modal = document.getElementById("detailmodel11");
-					var butt = document.getElementById("detailshow11");
-					var span = document.getElementsByClassName("close")[0];
-					butt.onclick = function(){
-						modal.style.display = "block";
-					}
-					span.onclick = function(){
-						modal.style.display = "none";
-					}
-					window.onclick = function(event) {
-						if (event.target == modal) {
-							modal.style.display = 'none';
-					}
-					}
-				</script>
-			</div>
-		</div>
-		<div class="filterDiv dinner">
-			<img src="../photos/healthyrecp3.jpeg" alt="">
-			<div class="sidediv"><i class="fa fa-heart"></i><i class="fa fa-shopping-cart"></i></div>
-			<button id="detailshow13" style="margin-right:10%; margin-top:1%;">Show more details</button>
-			<div class="model" id="detailmodel13">
-				<div class="modelcontent">
-					<span class="close">&times;</span>
-					<img src="../Images/breakfast.jpg" alt="">
-					<ul class="just">
-						<li><label for="">Name:</label> Boiled Egg-(3pcs)</li>
-						<li><label for="">Price:</label> 100Ks</li>
-						<li><label for="">Calories:</label> 600cals</li>
-						<li><label for="">Rating:</label> <span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star"></span></li>
-						<li><label for="">Categories:</label> Breakfast</li>
-					</ul>
-					<div class="ingredients">
-						<h2>Ingredients</h2>
-						<ul>
-							<li>Raw Eggs - 3</li>
-							<li>Salt</li>
-							<li>water</li>
-						</ul>
-					</div>
-					<div class="steps">
-						<h1>Guide: Step by Step</h1>
-						<p> &emsp; Pour an inch of water into a pot and insert a steamer basket. Bring to a boil. Place the eggs in steamer basket, cover, and steam for 12 minutes</p>
-					</div>
-					<div class="addto">
-						<label for="">Quantity: </label><input type="number" name="" id="" placeholder="The number of dish (the default is 1)" value="1">
-						<button type="submit">Add to cart <i class="fa fa-cart"></i></button>
-					</div>
-				</div>
-				<script>
-					var modal = document.getElementById("detailmodel13");
-					var butt = document.getElementById("detailshow13");
-					var span = document.getElementsByClassName("close")[0];
-					butt.onclick = function(){
-						modal.style.display = "block";
-					}
-					span.onclick = function(){
-						modal.style.display = "none";
-					}
-					window.onclick = function(event) {
-						if (event.target == modal) {
-							modal.style.display = 'none';
-					}
-					}
-				</script>
-			</div>
-		</div>
-		<div class="filterDiv dinner">
-			<img src="../photos/healthyrecp4.jpeg" alt="">
-			<div class="sidediv"><i class="fa fa-heart"></i><i class="fa fa-shopping-cart"></i></div>
-			<button id="detailshow14" style="margin-right:10%; margin-top:1%;">Show more details</button>
-			<div class="model" id="detailmodel14">
-				<div class="modelcontent">
-					<span class="close">&times;</span>
-					<img src="../Images/breakfast.jpg" alt="">
-					<ul class="just">
-						<li><label for="">Name:</label> Boiled Egg-(3pcs)</li>
-						<li><label for="">Price:</label> 100Ks</li>
-						<li><label for="">Calories:</label> 600cals</li>
-						<li><label for="">Rating:</label> <span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star"></span></li>
-						<li><label for="">Categories:</label> Breakfast</li>
-					</ul>
-					<div class="ingredients">
-						<h2>Ingredients</h2>
-						<ul>
-							<li>Raw Eggs - 3</li>
-							<li>Salt</li>
-							<li>water</li>
-						</ul>
-					</div>
-					<div class="steps">
-						<h1>Guide: Step by Step</h1>
-						<p> &emsp; Pour an inch of water into a pot and insert a steamer basket. Bring to a boil. Place the eggs in steamer basket, cover, and steam for 12 minutes</p>
-					</div>
-					<div class="addto">
-						<label for="">Quantity: </label><input type="number" name="" id="" placeholder="The number of dish (the default is 1)" value="1">
-						<button type="submit">Add to cart <i class="fa fa-cart"></i></button>
-					</div>
-				</div>
-				<script>
-					var modal = document.getElementById("detailmodel14");
-					var butt = document.getElementById("detailshow14");
-					var span = document.getElementsByClassName("close")[0];
-					butt.onclick = function(){
-						modal.style.display = "block";
-					}
-					span.onclick = function(){
-						modal.style.display = "none";
-					}
-					window.onclick = function(event) {
-						if (event.target == modal) {
-							modal.style.display = 'none';
-					}
-					}
-				</script>
-			</div>
-		</div>
-		<div class="filterDiv dinner">
-			<img src="../photos/healthyrecp5.jpeg" alt="">
-			<div class="sidediv"><i class="fa fa-heart"></i><i class="fa fa-shopping-cart"></i></div>
-			<button id="detailshow15" style="margin-right:10%; margin-top:1%;">Show more details</button>
-			<div class="model" id="detailmodel15">
-				<div class="modelcontent">
-					<span class="close">&times;</span>
-					<img src="../Images/breakfast.jpg" alt="">
-					<ul class="just">
-						<li><label for="">Name:</label> Boiled Egg-(3pcs)</li>
-						<li><label for="">Price:</label> 100Ks</li>
-						<li><label for="">Calories:</label> 600cals</li>
-						<li><label for="">Rating:</label> <span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star"></span></li>
-						<li><label for="">Categories:</label> Breakfast</li>
-					</ul>
-					<div class="ingredients">
-						<h2>Ingredients</h2>
-						<ul>
-							<li>Raw Eggs - 3</li>
-							<li>Salt</li>
-							<li>water</li>
-						</ul>
-					</div>
-					<div class="steps">
-						<h1>Guide: Step by Step</h1>
-						<p> &emsp; Pour an inch of water into a pot and insert a steamer basket. Bring to a boil. Place the eggs in steamer basket, cover, and steam for 12 minutes</p>
-					</div>
-					<div class="addto">
-						<label for="">Quantity: </label><input type="number" name="" id="" placeholder="The number of dish (the default is 1)" value="1">
-						<button type="submit">Add to cart <i class="fa fa-cart"></i></button>
-					</div>
-				</div>
-				<script>
-					var modal = document.getElementById("detailmodel15");
-					var butt = document.getElementById("detailshow15");
-					var span = document.getElementsByClassName("close")[0];
-					butt.onclick = function(){
-						modal.style.display = "block";
-					}
-					span.onclick = function(){
-						modal.style.display = "none";
-					}
-					window.onclick = function(event) {
-						if (event.target == modal) {
-							modal.style.display = 'none';
-					}
-					}
-				</script>
-			</div>
-		</div>
-		<div class="filterDiv dinner">
-			<img src="../photos/healthyrecp6.jpeg" alt="">
-			<div class="sidediv"><i class="fa fa-heart"></i><i class="fa fa-shopping-cart"></i></div>
-			<button id="detailshow16" style="margin-right:10%; margin-top:1%;">Show more details</button>
-			<div class="model" id="detailmodel16">
-				<div class="modelcontent">
-					<span class="close">&times;</span>
-					<img src="../Images/breakfast.jpg" alt="">
-					<ul class="just">
-						<li><label for="">Name:</label> Boiled Egg-(3pcs)</li>
-						<li><label for="">Price:</label> 100Ks</li>
-						<li><label for="">Calories:</label> 600cals</li>
-						<li><label for="">Rating:</label> <span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star"></span></li>
-						<li><label for="">Categories:</label> Breakfast</li>
-					</ul>
-					<div class="ingredients">
-						<h2>Ingredients</h2>
-						<ul>
-							<li>Raw Eggs - 3</li>
-							<li>Salt</li>
-							<li>water</li>
-						</ul>
-					</div>
-					<div class="steps">
-						<h1>Guide: Step by Step</h1>
-						<p> &emsp; Pour an inch of water into a pot and insert a steamer basket. Bring to a boil. Place the eggs in steamer basket, cover, and steam for 12 minutes</p>
-					</div>
-					<div class="addto">
-						<label for="">Quantity: </label><input type="number" name="" id="" placeholder="The number of dish (the default is 1)" value="1">
-						<button type="submit">Add to cart <i class="fa fa-cart"></i></button>
-					</div>
-				</div>
-				<script>
-					var modal = document.getElementById("detailmodel16");
-					var butt = document.getElementById("detailshow16");
-					var span = document.getElementsByClassName("close")[0];
-					butt.onclick = function(){
-						modal.style.display = "block";
-					}
-					span.onclick = function(){
-						modal.style.display = "none";
-					}
-					window.onclick = function(event) {
-						if (event.target == modal) {
-							modal.style.display = 'none';
-					}
-					}
-				</script>
-			</div>
+		<div class="mis">
+		  <div class="searchbar"><i class="fa fa-search"></i><input type="text" placeholder="Search here"></div>
+		  <div class="buttons">
+			<button>Meal Type</button>
+			<button>Filters</button>
+		  </div>
 		</div>
 	</div>
-	<script>
-		filterSelection("all")
-		function filterSelection(c) {
-  			var x, i;
-  			x = document.getElementsByClassName("filterDiv");
-  			if (c == "all") c = "";
-  			for (i = 0; i < x.length; i++) {
-    			w3RemoveClass(x[i], "show");
-    			if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-  			}
+	<div class="leftside">
+		<div class="sectionss Beginner">
+		  <div class="hehe">
+			<a href="#"><img src="../photos/vegrecp.jpeg" alt=""></a>
+			<h5>Healthy Meal Plan</h5>
+			<div class="caloriesss">
+			  <p class="calories"> 880cals</p>
+			  <i class="fa fa-heart"></i>
+			</div>
+		  </div>
+		</div>
+		<div class="sectionss Beginner">
+		  <div class="hehe">
+			<a href="#"><img src="../photos/vegrecp2.jpeg" alt=""></a>
+			<h5>Maxican Meal Plan</h5>
+			<div class="caloriesss">
+			  <p class="calories"> 880cals</p>
+			  <i class="fa fa-heart"></i>
+			</div>
+		  </div>
+		</div>
+		<div class="sectionss Beginner">
+		  <div class="hehe">
+			<a href="#"><img src="../photos/vegrecp3.jpeg" alt=""></a>
+			<h5>Korean Meal Plan</h5>
+			<div class="caloriesss">
+			  <p class="calories"> 699cals</p>
+			  <i class="fa fa-heart"></i>
+			</div>
+		  </div>
+		</div>
+		<div class="sectionss Everyday">
+		  <div class="hehe">
+			<a href="#"><img src="../photos/vegrecp4.jpeg" alt=""></a>
+			<h5>Asian Meal Plan</h5>
+			<div class="caloriesss">
+			  <p class="calories"> 999cals</p>
+			  <i class="fa fa-heart"></i>
+			</div>
+		  </div>
+		</div>
+		<div class="sectionss Everyday">
+		  <div class="hehe">
+			<a href=""><img src="../photos/vegrecp5.jpeg" alt=""></a>
+			<h5>Vegan meal plan</h5>
+			<div class="caloriesss">
+			  <p class="calories"> 666cals</p>
+			  <i class="fa fa-heart"></i>
+			</div>
+		  </div>
+		</div>
+		<div class="sectionss Everyday">
+		  <div class="hehe">
+			<a href=""><img src="../photos/vegrecp6.jpeg" alt=""></a>
+			<h5>4 week meal plan</h5>
+			<div class="caloriesss">
+			  <p class="calories"> 669cals</p>
+			  <i class="fa fa-heart"></i>
+			</div>
+		  </div>
+		</div>
+		<div class="sectionss Deluex">
+		  <div class="hehe">
+			<a href=""><img src="../photos/healthyrecp.jpeg" alt=""></a>
+			<h5>12 week healthy meal plan</h5>
+			<div class="caloriesss">
+			  <p class="calories"> 888cals</p>
+			  <i class="fa fa-heart"></i>
+			</div>
+		  </div>
+		</div>
+		<div class="sectionss Deluex">
+		  <div class="hehe">
+			<a href=""><img src="../photos/healthyrecp2.jpeg" alt=""></a>
+			<h5>4 week asian meal plan</h5>
+			<div class="caloriesss">
+			  <p class="calories"> 669cals</p>
+			  <i class="fa fa-heart"></i>
+			</div>
+		  </div>
+		</div>
+		<div class="sectionss Deluex">
+		  <div class="hehe">
+			<a href=""><img src="../photos/vegrecp3.jpeg" alt=""></a>
+			<h5>8 week korean meal plan</h5>
+			<div class="caloriesss">
+			  <p class="calories"> 1258cals</p>
+			  <i class="fa fa-heart"></i>
+			</div>
+		  </div>
+		</div>
+	</div>
+	  <div class="rightside">
+		<table border="1">
+		  <tr id="black">
+			<th class="huu">Day</th>
+			<td class="gogo">Beginner</td>
+			<td class="gogo">Everyday</td>
+			<td class="gogo">Deluex</td>
+			<td class="huu">Total <br> Calories</td>
+		  </tr>
+		  <tr>
+			<td>Sunday</td>
+			<td><img src="../photos/healthyrecp3.jpeg" alt=""></td>
+			<td><img src="../photos/healthyrecp4.jpeg" alt=""></td>
+			<td><img src="../photos/healthyrecp5.jpeg" alt=""></td>
+			<td><i>??? cals</i></td>
+		  </tr>
+		  <tr>
+			<td>Monday</td>
+			<td><img src="../photos/healthyrecp6.jpeg" alt=""></td>
+			<td><img src="../photos/vegrecp.jpeg" alt=""></td>
+			<td><img src="../photos/vegrecp2.jpeg" alt=""></td>
+			<td><i>??? cals</i></td>
+		  </tr>
+		  <tr>
+			<td>Tuesday</td>
+			<td><img src="../photos/vegrecp3.jpeg" alt=""></td>
+			<td><img src="../photos/vegrecp4.jpeg" alt=""></td>
+			<td><img src="../photos/vegrecp6.jpeg" alt=""></td>
+			<td><i>??? cals</i></td>
+		  </tr>
+		  <tr>
+			<td>Wednesday</td>
+			<td><img src="../photos/healthyrecp6.jpeg" alt=""></td>
+			<td><img src="../photos/healthyrecp5.jpeg" alt=""></td>
+			<td><img src="../photos/healthyrecp4.jpeg" alt=""></td>
+			<td><i>??? cals</i></td>
+		  </tr>
+		  <tr>
+			<td>Thursday</td>
+			<td><img src="../photos/healthyrecp3.jpeg" alt=""></td>
+			<td><img src="../photos/vegrecp3.jpeg" alt=""></td>
+			<td><img src="../photos/vegrecp6.jpeg" alt=""></td>
+			<td><i>??? cals</i></td>
+		  </tr>
+		  <tr>
+			<td>Friday</td>
+			<td><img src="../photos/vegrecp2.jpeg" alt=""></td>
+			<td><img src="../photos/healthyrecp.jpeg" alt=""></td>
+			<td><img src="../photos/vegrecp5.jpeg" alt=""></td>
+			<td><i>??? cals</i></td>
+		  </tr>
+		  <tr>
+			<td>Saturday</td>
+			<td><img src="../photos/vegrecp.jpeg" alt=""></td>
+			<td><img src="../photos/healthyrecp2.jpeg" alt=""></td>
+			<td><img src="../photos/healthyrecp4.jpeg" alt=""></td>
+			<td><i>??? cals</i></td>
+		  </tr>
+		</table>
+	  </div>
+	  <script>
+		function openTest() {
+			document.getElementsByClassName('Beginner').style.display = "block";
+			document.getElementsByClassName('Everyday').style.display = "none";
+			document.getElementsByClassName('Deluex').style.display = "none";
 		}
-
-		function w3AddClass(element, name) {
-  			var i, arr1, arr2;
-  			arr1 = element.className.split(" ");
-  			arr2 = name.split(" ");
-  			for (i = 0; i < arr2.length; i++) {
-    			if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-  			}
+		function openTest1() {
+			document.getElementsByClassName('Beginner').style.display = "none";
+			document.getElementsByClassName('Everyday').style.display = "block";
+			document.getElementsByClassName('Deluex').style.display = "none";
 		}
-
-		function w3RemoveClass(element, name) {
-  			var i, arr1, arr2;
- 			arr1 = element.className.split(" ");
-  			arr2 = name.split(" ");
-  			for (i = 0; i < arr2.length; i++) {
-    			while (arr1.indexOf(arr2[i]) > -1) {
-      				arr1.splice(arr1.indexOf(arr2[i]), 1);     
-    			}
-  			}
-  			element.className = arr1.join(" ");
+		function openTest2() {
+			document.getElementsByClassName('Beginner').style.display = "none";
+			document.getElementsByClassName('Everyday').style.display = "none";
+			document.getElementsByClassName('Deluex').style.display = "block";
 		}
-
-// Add active class to the current button (highlight it)
-		var btnContaine1r = document.getElementById("myBtnContainer")	;
-		var btns = btnContainer.getElementsByClassName("btn1")	;
-		for (var i = 0; i < btns.length; i++) {	
-  			btns[i].addEventListener("click", function(){
-    			var current = document.getElementsByClassName("actives");
-    			current[0].className = current[0].className.replace(" actives", "");
-    			this.className += " actives";
-  			});
-		}
-	</script> 
-
+		document.getElementById('btn').addEventListener('click', openTest);
+	  </script>
+	  <div class="app">
+        <h2>Nutritional App</h2>
+        <img src="../photos/applogo.png" alt="" id="appicon">
+        <div class="infor">
+          <p>&nbsp; &nbsp; &nbsp; MyPlate Calories Tracker is full-featured subscription-based diet app. It contains a nutritional database of 2 million items, and includes the ability to track calories, macronutrients and water intake, and see if you’re meeting your diet goals. You can also generate graphs and charts that help you to visualize and assess your food habits.While their nutritional database is large, it's not as comprehensive as the aforementioned app MyFitnessPal’s Calorie Counter & Diet Tracker. And unlike MyNetDiary's Calorie Counter & Food Diary, you cannot track exercise.  Like both those tools, full functionality requires a subscription ($9.99 per month or $44.99 per year).</p>
+          </div>
+        <a href="https://play.google.com/store/games?hl=en&gl=US"><img src="../photos/getiton.png" alt="" class="getiton"></a><a href="https://www.apple.com/app-store/"><img src="../photos/applestore.png" alt="" class="getiton"></a>
+    </div>
 </body>
-
-
 <footer>
 	<div class="letter">
 		<strong>If you have a product that you are interested in, please write to us. Please include as many details as possible in your enquires. Your inputs will gleatly help us to serve you better.</strong> 
@@ -920,7 +253,7 @@
 			<ul>
 				<li><i class="fa fa-phone"></i>01 - 123456</li>
 				<li><i class="fa fa-envelope"></i>mayhninsi@gmail.com</li>
-			</ul>
+			</ul>	
 		</div>
 		<div class="same down">
 			<h1>Follow Us On</h1>

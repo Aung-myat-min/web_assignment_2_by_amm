@@ -1,7 +1,8 @@
 *{
 	margin: 0;
 	padding: 0;
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	transition: .4s linear;
+	font-family: Arial, Helvetica, sans-serif;
 }
 body::-webkit-scrollbar {
 	display: none;
@@ -39,7 +40,7 @@ a{
 	margin-top: -100vh;
 	width: 100%;
 	height: 10vh;
-	background-color: rgba(112, 112, 112, .6);
+	background-color: rgba(255, 255, 255, 0.8);
 	display: inline-block;
 	position: absolute;
 	margin-top: 15vh;
@@ -127,8 +128,7 @@ a{
 /*================================================================*/
 footer{
 	width: 100%;
-	height: 70vh;
-	margin-top: 5vh;
+	height: 50vh;
 	border-top: 2px solid red;
 	padding-top: 3vh;
 }
@@ -140,65 +140,72 @@ footer p{
 	height: 10vh;
 	display: inline-block;
 	text-align: center;
-	background-color: #007acc;
+	background-color: #FF4B2B;
 }
 footer input{
 	border-radius: 20px 0 0 20px;
 }
 .A{
 	margin-top: 5vh;
-	width: 40%;
+	width: 30%;
 	float: left;
-	height: 35vh;
+	height: 30vh;
+	margin-left: 4vh;
 }
 .A input{
-	width: 90%;
-	padding: 3.5vh 0;
+	width: 100%;
+	padding: 2.4vh 0;
 	padding-left: 1vh;
-	margin-left: 3vh;
-	font-size: 20px;
+	margin-left: 8vh;
+	font-size: 15px;
+}
+form button{
+	margin-right: 4vh;
 }
 .B{
 	margin-top: 5vh;
-	float: left	;
+	float: left;
 	width: 60%;
-	height: 35vh;
+	height: 25vh;
 }
 .B textarea{
 	float: right;
 	font-size: 15px;
 	padding: 1vh;
-	width: 95%;
-	height: 30.5vh;
+	width: 90%;
+	height: 20.5vh;
 	border: 2px solid black;
 }
 .letter{
-	width: 45%;
+	margin-left: 5%;
+	width: 40%;
 	float: left;
-	height: 60vh;
+	height: 47vh;
 }
 .letter strong{
+	text-align: justify;
 	display: inline-block;
 	margin-left: 4vh;
 }
 .contact{
 	width: 55%;
 	float: right;
-	height: 60vh;
+	height: 47vh;
+	text-align: center;
 }
 .upper{
 	width: 100%;
-	height: 30vh;
+	height: 20vh;
 }
 .upper li{
 	margin-top: 3vh;
 }
 .same h1{
 	font-size: 30px;
-	width: 100%;
+	border-bottom: 1px solid red;
 	display: inline-block;
 	text-align: center;
-	margin: 2vh 0;
+	margin: 1vh 0;
 }
 .same ul{
 	text-align: center;
@@ -211,15 +218,16 @@ footer input{
 .same li:hover{
 	cursor: pointer;
 	color: red;
-	transition: 1s linear;
+	transition: .7#5s linear;
 }
 .same i{
 	padding: 1vh;
 	font-size: 35px;
 }
 .down{
+	margin-top: 2vh;
 	width: 100%;
-	height: 30vh;
+	height: 20vh;
 }
 .down li{
 	margin: 5vh 5%;
@@ -228,7 +236,7 @@ form button{
 	float: right;
 	padding: 2vh 3vh;
 	border-radius: 25px;
-	background-color: #134482;
+	background-color: #FF4B2B;
 	font-size: 15px;
 	color: white;
 }

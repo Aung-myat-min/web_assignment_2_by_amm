@@ -1,6 +1,180 @@
 nav{
 	width: 100%;
 	height: 25vh;
-	background-image: url("../Images/shopnow.jpg");
+	background-color: rgba(255, 255, 255, .8);
 	position: absolute;
+}
+.primary{
+    width: 90%;
+    margin: 0 0 0 5%;
+    height: 40vh;
+}
+.primary button{
+	background-color: white;
+}
+.primary button:hover, #save:hover{
+    color: white;
+    background-color: #FF4B2B;
+    cursor: pointer;
+}
+#spoons{
+    font-size: 50px;
+    margin: 7vh 1vh 0 7vh;
+    float: left;
+}
+.smalltext{
+    display: inline-block;
+    margin-top: 5vh;
+    margin-left: 2vh;
+    float: left;
+}
+.smalltext h6{
+    color: #FF4B2B;
+}
+.smalltext p{
+    margin-top: 3vh;
+    font-size: 20px;
+}
+.mis{
+    width: 45vh;
+    margin-top: 20vh;
+    float: left;
+    margin-left: -35vh;
+}
+.searchbar{
+    width: 100%;
+    border: 2px solid red;
+    height: 5vh;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.searchbar input{
+    padding: 0;
+    margin: 0;
+    height: 5vh;
+    width: 85%;
+    float: right;
+    border: 0;
+    outline: 0;
+}
+.searchbar i{
+    line-height: 5vh;
+    margin-left: 2vh;
+}
+.buttons{
+    width: 100%;
+    margin-top: 4vh;
+    text-align: center;
+}
+.buttons button{
+    margin: 0;
+    padding: 0;
+    width: 15vh;
+    height: 5vh;
+    border-radius: 20px;
+    margin-left: 5vh;
+}
+.leftside{
+    width: 38%;
+    margin-left: 3%;
+    height: 150vh;
+    float: left;
+    overflow: auto;
+    margin-bottom: 10vh;
+}
+.leftside::-webkit-scrollbar {
+    display: none;
+  }
+.sectionss{
+    height: 20vh;
+    width: 89%;
+    margin: 3vh 5%;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px 3px #FF4B2B;
+}
+.hehe {
+    height: 100%;
+    width: 100%;
+}
+.hehe img{
+    height: 90%;
+    margin: 5px 2vh;
+    float: left;
+}
+.hehe h5{   
+    font-size: 16px;
+    font-weight: lighter;
+    float: left;
+    margin-top: 15px;
+}
+.caloriesss{
+    width: 27%;
+    height: auto;
+    float: right;
+    margin-top: 9vh;
+    margin-right: 2vh;
+}
+.caloriesss *{
+    padding: 0;
+    margin: 0;
+}
+.caloriesss i{
+    margin-right: 2vh;
+    font-size: 20px;
+    color: pink;
+    margin-top: 1vh;
+}
+.hehe i{
+    float: right;
+    margin-bottom: 0;
+}
+.rightside{
+	margin-top: -10vh;
+    width: 57%;
+    height: 150vh;
+    float: right;
+	border: 3px solid red;
+}
+th,td{
+    text-align: center;
+	border: 1px solid red;
+	border-style: solid hidden solid hidden;
+}
+#black{
+    color: white;
+    background-color: #FF4B2B;
+	font-size: 20px;
+}
+#black td,th{
+	border: 1.5px solid white;
+	border-style: hidden solid hidden solid;
+}
+table{
+    border-collapse: collapse;
+}
+
+td img{
+    height: 16vh;
+    float: left;
+    margin-left: 2vh;
+}
+td p{
+    float: right;
+}
+tr{
+    height: 18.75vh;
+}
+.huu{
+    width: 3%;
+}
+.gogo{
+    width: 7%;
+}
+.caloriesss i:hover{
+    color: yellow;
+    cursor: pointer;
+}
+footer{
+	display: inline-block;
 }
