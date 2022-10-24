@@ -18,7 +18,7 @@ nav{
 	display: inline-block;
 	border: 1px solid black;
 	border-style: hidden solid hidden solid;
-	width: 15vh;
+	width: 20vh;
 	height: 6vh;
 	font-size: 20px;
 	font-weight: bold;
@@ -195,4 +195,7 @@ nav{
 	color: red;
 	transition: linear .3s;
 	border-color: darkred;
+}
+.actives{
+	color: white;
 }
